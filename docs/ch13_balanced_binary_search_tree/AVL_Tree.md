@@ -295,6 +295,6 @@ struct Node* insertNode(struct Node* node, int key)
 
 ### 참고한 자료
 
-- [Introduction to AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-avl-tree/)
-- [Insertion in an AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/insertion-in-an-avl-tree/)
-- [Deletion in an AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/deletion-in-an-avl-tree/)
+- GeeksforGeeks의 [Introduction to AVL Tree](https://www.geeksforgeeks.org/introduction-to-avl-tree/)
+- GeeksforGeeks의 [Insertion in an AVL Tree](https://www.geeksforgeeks.org/insertion-in-an-avl-tree/)
+- GeeksforGeeks의 [Deletion in an AVL Tree](https://www.geeksforgeeks.org/deletion-in-an-avl-tree/)
