@@ -286,4 +286,15 @@ struct Node* insertNode(struct Node* node, int key)
 
     // Return the unchanged node pointer
     return node;
+
+
 }
+
+```
+---
+
+### 참고한 자료
+
+- [Introduction to AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-avl-tree/)
+- [Insertion in an AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/insertion-in-an-avl-tree/)
+- [Deletion in an AVL Tree – GeeksforGeeks](https://www.geeksforgeeks.org/deletion-in-an-avl-tree/)
