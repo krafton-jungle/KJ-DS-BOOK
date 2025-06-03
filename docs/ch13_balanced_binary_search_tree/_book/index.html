@@ -1,0 +1,936 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="avl-tree-&#xB780;">AVL Tree &#xB780;?</h2>
+<p>AVL &#xD2B8;&#xB9AC;&#xB294; &#xC790;&#xAE30; &#xADE0;&#xD615; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;(Binary Search Tree)&#xB85C;,<br>&#xC5B4;&#xB5A4; &#xB178;&#xB4DC;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB3C4; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC640; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774; &#xCC28;&#xC774;&#xAC00; 1&#xC744; &#xCD08;&#xACFC;&#xD558;&#xC9C0; &#xC54A;&#xC544;&#xC57C; &#xD55C;&#xB2E4;.<br>&#xC774; &#xB192;&#xC774; &#xCC28;&#xC774;&#xB97C; &#xB098;&#xD0C0;&#xB0B4;&#xB294; &#xAC12;&#xC744; <code>&#xADE0;&#xD615; &#xC778;&#xC218;(Balance Factor)</code>&#xB77C;&#xACE0; &#xD55C;&#xB2E4;.<br><code>&#xADE0;&#xD615; &#xC778;&#xC218;</code>&#xB294; <code>&#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774; - &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;</code>&#xB85C; &#xC815;&#xC758;&#xB41C;&#xB2E4;.<br><img src="AVL_Tree_Image/AVL_Tree_01.png" alt="AVL_Tree_Image"></p>
+<hr>
+<h3 id="avl-tree&#xC758;-&#xC2DC;&#xAC04;-&#xBCF5;&#xC7A1;&#xB3C4;">AVL Tree&#xC758; &#xC2DC;&#xAC04; &#xBCF5;&#xC7A1;&#xB3C4;</h3>
+<table>
+<thead>
+<tr>
+<th>&#xC5F0;&#xC0B0;</th>
+<th>&#xC2DC;&#xAC04; &#xBCF5;&#xC7A1;&#xB3C4;</th>
+<th>&#xC124;&#xBA85;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#xAC80;&#xC0C9;</td>
+<td><code>O(log n)</code></td>
+<td>&#xB8E8;&#xD2B8;&#xC5D0;&#xC11C; &#xC2DC;&#xC791;&#xD558;&#xC5EC; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9;&#xC744; &#xC218;&#xD589;</td>
+</tr>
+<tr>
+<td>&#xC0BD;&#xC785;</td>
+<td><code>O(log n)</code></td>
+<td>&#xC0BD;&#xC785; &#xD6C4; &#xCD5C;&#xB300; <code>O(log n)</code>&#xAC1C;&#xC758; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; &#xD68C;&#xC804; &#xBC1C;&#xC0DD;</td>
+</tr>
+<tr>
+<td>&#xC0AD;&#xC81C;</td>
+<td><code>O(log n)</code></td>
+<td>&#xC0AD;&#xC81C; &#xD6C4; &#xCD5C;&#xB300; <code>O(log n)</code>&#xAC1C;&#xC758; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; &#xD68C;&#xC804; &#xBC1C;&#xC0DD;</td>
+</tr>
+<tr>
+<td>&#xCD5C;&#xB300;&#xAC12;</td>
+<td><code>O(log n)</code></td>
+<td>&#xAC00;&#xC7A5; &#xC624;&#xB978;&#xCABD; &#xB178;&#xB4DC; &#xD0D0;&#xC0C9;</td>
+</tr>
+<tr>
+<td>&#xCD5C;&#xC18C;&#xAC12;</td>
+<td><code>O(log n)</code></td>
+<td>&#xAC00;&#xC7A5; &#xC67C;&#xCABD; &#xB178;&#xB4DC; &#xD0D0;&#xC0C9;</td>
+</tr>
+<tr>
+<td>floor(x)</td>
+<td><code>O(log n)</code></td>
+<td>x &#xC774;&#xD558;&#xC758; &#xAC12; &#xC911; &#xCD5C;&#xB300;&#xAC12; &#xD0D0;&#xC0C9;</td>
+</tr>
+<tr>
+<td>ceiling(x)</td>
+<td><code>O(log n)</code></td>
+<td>x &#xC774;&#xC0C1;&#xC758; &#xAC12; &#xC911; &#xCD5C;&#xC18C;&#xAC12; &#xD0D0;&#xC0C9;</td>
+</tr>
+</tbody>
+</table>
+<p>AVL &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;&#xB294; <code>O(log n)</code>&#xC73C;&#xB85C; &#xC81C;&#xD55C;&#xB418;&#xBBC0;&#xB85C;, &#xBAA8;&#xB4E0; &#xC5F0;&#xC0B0;&#xC774; <code>O(log n)</code>&#xC758; &#xC2DC;&#xAC04; &#xBCF5;&#xC7A1;&#xB3C4;&#xB97C; &#xAC16;&#xB294;&#xB2E4;.<br>&#xC77C;&#xBC18;&#xC801;&#xC778; BST&#xC758; &#xACBD;&#xC6B0; &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;&#xAC00; &#xCD5C;&#xB300; <code>O(n)</code>&#xAE4C;&#xC9C0; &#xC99D;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC5B4; &#xC131;&#xB2A5; &#xC800;&#xD558;&#xAC00; &#xBC1C;&#xC0DD;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<hr>
+<h3 id="avl-tree--bst-&#xC758;-&#xCC28;&#xC774;">AVL Tree &amp; BST &#xC758; &#xCC28;&#xC774;</h3>
+<p>&#xBAA8;&#xB4E0; <code>AVL &#xD2B8;&#xB9AC;&#xB294; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;(BST)</code>&#xC774;&#xC9C0;&#xB9CC;, <code>&#xBAA8;&#xB4E0; BST&#xAC00; AVL &#xD2B8;&#xB9AC;&#xB294; &#xC544;&#xB2C8;&#xB2E4;.</code>
+<img src="AVL_Tree_Image/AVL_Tree_02.png" alt="AVL_Tree_Image"></p>
+<p>AVL &#xD2B8;&#xB9AC;&#xB294; BST&#xC758; &#xAE30;&#xBCF8; &#xC870;&#xAC74;(&#xC67C;&#xCABD; &lt; &#xB8E8;&#xD2B8; &lt; &#xC624;&#xB978;&#xCABD;)&#xC744; &#xB9CC;&#xC871;&#xD558;&#xBA70;,<br>&#xCD94;&#xAC00;&#xB85C; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC; &#xAC04;&#xC758; &#xB192;&#xC774; &#xCC28;&#xC774;(&#xADE0;&#xD615; &#xC778;&#xC218;)&#xAC00; 1 &#xC774;&#xD558;&#xC778; &#xADE0;&#xD615; &#xC870;&#xAC74;&#xB3C4; &#xB9CC;&#xC871;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.<br>&#xBC18;&#xBA74; &#xC77C;&#xBC18; BST&#xB294; <code>&#xADE0;&#xD615; &#xC870;&#xAC74;&#xC744; &#xACE0;&#xB824;&#xD558;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;,</code><br>&#xD55C;&#xCABD;&#xC73C;&#xB85C; &#xD3B8;&#xD5A5;&#xB41C; &#xD2B8;&#xB9AC;&#xAC00; &#xD615;&#xC131;&#xB418;&#xC5B4; &#xB192;&#xC774;&#xAC00; &#xD06C;&#xAC8C; &#xC99D;&#xAC00;&#xD560; &#xC218; &#xC788;&#xB2E4;.<br>&#xC774;&#xB7EC;&#xD55C; &#xAD6C;&#xC870;&#xB294; AVL &#xD2B8;&#xB9AC;&#xC758; &#xC815;&#xC758;&#xB97C; &#xB9CC;&#xC871;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<hr>
+<h3 id="avl-tree&#xC758;-&#xC911;&#xBCF5;-&#xAC12;&#xC774;-&#xC788;&#xB2E4;&#xBA74;">AVL Tree&#xC758; &#xC911;&#xBCF5; &#xAC12;&#xC774; &#xC788;&#xB2E4;&#xBA74;?</h3>
+<p>AVL &#xD2B8;&#xB9AC;&#xB294; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC5D0;&#xB294; &#xB354; &#xC791;&#xC740; &#xAC12;, &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC5D0;&#xB294; &#xB354; &#xD070; &#xAC12;&#xB9CC; &#xC704;&#xCE58;&#xD574;&#xC57C; &#xD558;&#xBBC0;&#xB85C; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xC911;&#xBCF5; &#xAC12;&#xC744; &#xD5C8;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.<br><code>&#xC911;&#xBCF5; &#xAC12;&#xC744; &#xD5C8;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xBB38;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;</code>&#xD55C;&#xB2E4;.</p>
+<h3 id="avl-tree&#xB294;-&#xC911;&#xBCF5;-&#xAC12;&#xC744;-&#xD5C8;&#xC6A9;&#xD558;&#xC9C0;-&#xC54A;&#xB294;&#xAC00;">AVL Tree&#xB294; &#xC911;&#xBCF5; &#xAC12;&#xC744; &#xD5C8;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xAC00;?</h3>
+<p>&#xC911;&#xBCF5; &#xAC12;&#xC744; &#xD5C8;&#xC6A9;&#xD55C;&#xB2E4;&#xACE0; &#xAC00;&#xC815;&#xD558;&#xACE0; AVL Tree&#xC5D0; &#xADF8;&#xB300;&#xB85C; &#xC0BD;&#xC785;&#xD574; &#xBCF4;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD615;&#xD0DC;&#xB41C;&#xB2E4;.<br><img src="AVL_Tree_Image/AVL_Tree_03.png" alt="AVL_Tree_Image"></p>
+<p>&#xC774; &#xAD6C;&#xC870;&#xB294; &#xC0AC;&#xC2E4;&#xC0C1; <strong>&#xD55C;&#xCABD;&#xC73C;&#xB85C; &#xCE58;&#xC6B0;&#xCE5C; &#xC5F0;&#xACB0; &#xB9AC;&#xC2A4;&#xD2B8;</strong>&#xC640; &#xB2E4;&#xB97C; &#xBC14; &#xC5C6;&#xC73C;&#xBA70;, <strong>AVL &#xD2B8;&#xB9AC;&#xC758; &#xADE0;&#xD615; &#xC870;&#xAC74;</strong>&#xC774; &#xAE68;&#xC9C0;&#xAC8C; &#xB41C;&#xB2E4;.</p>
+<ol>
+<li><strong>&#xADE0;&#xD615; &#xBD95;&#xAD34;</strong>: &#xC911;&#xBCF5; &#xAC12;&#xC774; &#xD55C;&#xCABD;&#xC73C;&#xB85C; &#xACC4;&#xC18D; &#xC0BD;&#xC785;&#xB418;&#xBA74; &#xD2B8;&#xB9AC;&#xC758; &#xADE0;&#xD615;&#xC774; &#xBB34;&#xB108;&#xC9C0;&#xACE0;, <code>&#xBE48;&#xBC88;&#xD55C; &#xD68C;&#xC804;&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;.</code></li>
+<li><strong>&#xBE44;&#xD6A8;&#xC728;&#xC801;&#xC778; &#xAD6C;&#xC870;</strong>: &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xBA74;&#xC11C; &#xC2DC;&#xAC04; &#xBCF5;&#xC7A1;&#xB3C4;&#xAC00; <code>O(log n)</code>&#xC744; &#xB118;&#xC5B4;&#xC11C;&#xAC8C; &#xB41C;&#xB2E4;.</li>
+<li><strong>&#xB370;&#xC774;&#xD130; &#xCC98;&#xB9AC;&#xC758; &#xBAA8;&#xD638;&#xC131;</strong>: &#xAC80;&#xC0C9;&#xC774;&#xB098; &#xC0AD;&#xC81C; &#xC2DC; &#xC5B4;&#xB290; &#xC911;&#xBCF5; &#xB178;&#xB4DC;&#xB97C; &#xB300;&#xC0C1;&#xC73C;&#xB85C; &#xC5F0;&#xC0B0;&#xD560;&#xC9C0; &#xBA85;&#xD655;&#xD558;&#xC9C0; &#xC54A;&#xB2E4;.</li>
+</ol>
+<hr>
+<h3 id="avl-tree&#xC758;-&#xD68C;&#xC804;">AVL Tree&#xC758; &#xD68C;&#xC804;</h3>
+<p>AVL &#xD2B8;&#xB9AC;&#xB294; &#xC0BD;&#xC785; &#xB610;&#xB294; &#xC0AD;&#xC81C; &#xC5F0;&#xC0B0; &#xD6C4; &#xD2B8;&#xB9AC;&#xC758; <code>&#xADE0;&#xD615;&#xC774; &#xAE68;&#xC9C8; &#xC218; &#xC788;&#xB2E4;.</code><br>&#xC774;&#xB54C; <code>&#xD68C;&#xC804;&#xC744; &#xD1B5;&#xD574; &#xADE0;&#xD615;&#xC744; &#xBCF5;&#xC6D0;</code>&#xD55C;&#xB2E4;. &#xD68C;&#xC804;&#xC758; &#xC885;&#xB958;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xB2E4;.</p>
+<ul>
+<li><strong>LL &#xD68C;&#xC804; (Right Rotation)</strong></li>
+<li><strong>RR &#xD68C;&#xC804; (Left Rotation)</strong></li>
+<li><strong>LR &#xD68C;&#xC804; (Left-Right Rotation)</strong></li>
+<li><strong>RL &#xD68C;&#xC804; (Right-Left Rotation)</strong></li>
+</ul>
+<p>&#xBD88;&#xADE0;&#xD615;&#xC758; &#xC720;&#xD615;&#xC5D0; &#xB530;&#xB77C; &#xD558;&#xB098;&#xC758; &#xD68C;&#xC804; &#xB610;&#xB294; &#xB450; &#xB2E8;&#xACC4;&#xC758; &#xD68C;&#xC804;&#xC744; &#xC218;&#xD589;&#xD558;&#xC5EC; &#xADE0;&#xD615;&#xC744; &#xD68C;&#xBCF5;&#xD55C;&#xB2E4;.</p>
+<p><img src="AVL_Tree_Image/AVL_Tree_04.png" alt="AVL_Tree_Image"><br>&#xBD88;&#xADE0;&#xD615;&#xC774; &#xBC1C;&#xC0DD;&#xD55C; &#xB178;&#xB4DC; A&#xC758; &#xC67C;&#xCABD; &#xC790;&#xC2DD; B&#xC758; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC; &#xCABD;&#xC5D0;&#xC11C; &#xB192;&#xC774;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xC5EC; &#xBD88;&#xADE0;&#xD615;&#xC774; &#xC0DD;&#xAE34; &#xACBD;&#xC6B0;&#xC774;&#xB2E4;.</p>
+<ol>
+<li>B&#xB97C; &#xC0C8;&#xB85C;&#xC6B4; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC758; &#xB8E8;&#xD2B8;&#xB85C; &#xC124;&#xC815;&#xD55C;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC; A&#xC758; &#xC67C;&#xCABD; &#xC5F0;&#xACB0;&#xC744; &#xD574;&#xC81C;&#xD558;&#xACE0;, A&#xB97C; B&#xC758; &#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD;&#xC73C;&#xB85C; &#xC5F0;&#xACB0;&#xD55C;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC; B&#xAC00; &#xC6D0;&#xB798; A&#xAC00; &#xCC28;&#xC9C0;&#xD558;&#xB358; &#xC704;&#xCE58;&#xB85C; &#xC62C;&#xB77C;&#xAC04;&#xB2E4;.</li>
+</ol>
+<p><img src="AVL_Tree_Image/AVL_Tree_05.png" alt="AVL_Tree_Image"><br>&#xBD88;&#xADE0;&#xD615;&#xC774; &#xBC1C;&#xC0DD;&#xD55C; &#xB178;&#xB4DC; A&#xC758; &#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD; B&#xC758; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC; &#xCABD;&#xC5D0;&#xC11C; &#xB192;&#xC774;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xC5EC; &#xBD88;&#xADE0;&#xD615;&#xC774; &#xC0DD;&#xAE34; &#xACBD;&#xC6B0;&#xC774;&#xB2E4;.</p>
+<ol>
+<li>B&#xB97C; &#xC0C8;&#xB85C;&#xC6B4; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC758; &#xB8E8;&#xD2B8;&#xB85C; &#xC124;&#xC815;&#xD55C;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC; A&#xC758; &#xC624;&#xB978;&#xCABD; &#xC5F0;&#xACB0;&#xC744; &#xD574;&#xC81C;&#xD558;&#xACE0;, A&#xB97C; B&#xC758; &#xC67C;&#xCABD; &#xC790;&#xC2DD;&#xC73C;&#xB85C; &#xC5F0;&#xACB0;&#xD55C;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC; B&#xAC00; &#xC6D0;&#xB798; A&#xAC00; &#xCC28;&#xC9C0;&#xD558;&#xB358; &#xC704;&#xCE58;&#xB85C; &#xC62C;&#xB77C;&#xAC04;&#xB2E4;.</li>
+</ol>
+<p><img src="AVL_Tree_Image/AVL_Tree_06.png" alt="AVL_Tree_Image"><br>&#xBD88;&#xADE0;&#xD615;&#xC774; &#xBC1C;&#xC0DD;&#xD55C; &#xB178;&#xB4DC; A&#xC758; &#xC67C;&#xCABD; &#xC790;&#xC2DD; B&#xC758; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC; &#xCABD;&#xC5D0;&#xC11C; &#xB192;&#xC774;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xC5EC; &#xBD88;&#xADE0;&#xD615;&#xC774; &#xC0DD;&#xAE34; &#xACBD;&#xC6B0;&#xC774;&#xB2E4;.</p>
+<h3 id="&#x1F538;-1&#xB2E8;&#xACC4;-b-&#xAE30;&#xC900;-left-rotation">&#x1F538; 1&#xB2E8;&#xACC4;: B &#xAE30;&#xC900; <strong>Left Rotation</strong></h3>
+<p>B&#xB294; &#xB8E8;&#xD2B8;&#xC5D0;&#xC11C; &#xC544;&#xB798;&#xB85C; &#xB0B4;&#xB824;&#xAC00;&#xACE0;, C&#xAC00; B&#xC758; &#xC67C;&#xCABD; &#xC790;&#xC2DD;&#xC774; &#xB41C;&#xB2E4;.</p>
+<h3 id="&#x1F538;-2&#xB2E8;&#xACC4;-c-&#xAE30;&#xC900;-&#x2192;-ll-case-right-rotation">&#x1F538; 2&#xB2E8;&#xACC4;: C &#xAE30;&#xC900; &#x2192; <strong>LL Case (Right Rotation)</strong></h3>
+<p><img src="AVL_Tree_Image/AVL_Tree_07.png" alt="AVL_Tree_Image"><br>&#xBD88;&#xADE0;&#xD615;&#xC774; &#xBC1C;&#xC0DD;&#xD55C; &#xB178;&#xB4DC; A&#xC758; &#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD; B&#xC758; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC; &#xCABD;&#xC5D0;&#xC11C; &#xB192;&#xC774;&#xAC00; &#xC99D;&#xAC00;&#xD558;&#xC5EC; &#xBD88;&#xADE0;&#xD615;&#xC774; &#xC0DD;&#xAE34; &#xACBD;&#xC6B0;&#xC774;&#xB2E4;.</p>
+<h3 id="&#x1F538;-1&#xB2E8;&#xACC4;-b-&#xAE30;&#xC900;-right-rotation">&#x1F538; 1&#xB2E8;&#xACC4;: B &#xAE30;&#xC900; <strong>Right Rotation</strong></h3>
+<p>B&#xB294; &#xB8E8;&#xD2B8;&#xC5D0;&#xC11C; &#xC544;&#xB798;&#xB85C; &#xB0B4;&#xB824;&#xAC00;&#xACE0;, C&#xAC00; B&#xC758; &#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD;&#xC774; &#xB41C;&#xB2E4;.</p>
+<h3 id="&#x1F538;-2&#xB2E8;&#xACC4;-a-&#xAE30;&#xC900;-&#x2192;-rr-case-left-rotation">&#x1F538; 2&#xB2E8;&#xACC4;: A &#xAE30;&#xC900; &#x2192; <strong>RR Case (Left Rotation)</strong></h3>
+<hr>
+<h3 id="avl-tree&#xC758;-&#xC0BD;&#xC785;">AVL Tree&#xC758; &#xC0BD;&#xC785;</h3>
+<ol>
+<li>AVL &#xD2B8;&#xB9AC;&#xC5D0; &#xAC12;&#xC744; &#xC0BD;&#xC785;&#xD560; &#xB54C;&#xB294; &#xB8E8;&#xD2B8; &#xB178;&#xB4DC;&#xBD80;&#xD130; &#xC2DC;&#xC791;&#xD558;&#xC5EC; &#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xC640; &#xC0BD;&#xC785;&#xD560; &#xAC12;&#xC744; &#xBE44;&#xAD50;&#xD55C;&#xB2E4;.</li>
+<li>&#xC0BD;&#xC785;&#xD560; &#xAC12;&#xC774; &#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xC758; &#xAC12;&#xBCF4;&#xB2E4; &#xC791;&#xC73C;&#xBA74; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xB85C; &#xC774;&#xB3D9;&#xD55C;&#xB2E4;.<ul>
+<li>&#xB9CC;&#xC57D; &#xC67C;&#xCABD; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xAC00; &#xC5C6;&#xB2E4;&#xBA74;, &#xADF8; &#xC704;&#xCE58;&#xC5D0; &#xC0C8; &#xB178;&#xB4DC;&#xB97C; &#xC0BD;&#xC785;&#xD55C;&#xB2E4;.</li>
+</ul>
+</li>
+<li>&#xBC18;&#xB300;&#xB85C; &#xC0BD;&#xC785;&#xD560; &#xAC12;&#xC774; &#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xC758; &#xAC12;&#xBCF4;&#xB2E4; &#xD06C;&#xBA74; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xB85C; &#xC774;&#xB3D9;&#xD55C;&#xB2E4;.<ul>
+<li>&#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xAC00; &#xC5C6;&#xC73C;&#xBA74;, &#xADF8; &#xC704;&#xCE58;&#xC5D0; &#xC0C8; &#xB178;&#xB4DC;&#xB97C; &#xC0BD;&#xC785;&#xD55C;&#xB2E4;.</li>
+</ul>
+</li>
+<li>&#xC0BD;&#xC785;&#xC774; &#xC644;&#xB8CC;&#xB41C; &#xD6C4;&#xC5D0;&#xB294; &#xD2B8;&#xB9AC;&#xC758; &#xADE0;&#xD615;&#xC744; &#xC720;&#xC9C0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD544;&#xC694;&#xD55C; &#xD68C;&#xC804; &#xC5F0;&#xC0B0;&#xC744; &#xC218;&#xD589;&#xD55C;&#xB2E4;.
+<img src="AVL_Tree_Image/AVL_Tree_08.png" alt="AVL_Tree_Image">
+<img src="AVL_Tree_Image/AVL_Tree_09.png" alt="AVL_Tree_Image"></li>
+</ol>
+<hr>
+<h3 id="avl-tree-&#xC0AD;&#xC81C;">AVL Tree &#xC0AD;&#xC81C;</h3>
+<ol>
+<li>&#xC77C;&#xBC18; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9;&#xD2B8;&#xB9AC; &#xC0AD;&#xC81C;&#xC640; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xB178;&#xB4DC;&#xB97C; &#xC0AD;&#xC81C;&#xD560; &#xB54C;, &#xC0AD;&#xC81C;&#xD560; &#xB178;&#xB4DC;&#xAC00; &#xB450; &#xC790;&#xC2DD;&#xC744; &#xAC00;&#xC9C4; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD574;&#xB2F9; &#xB178;&#xB4DC;&#xB97C; &#xBC14;&#xB85C; &#xC0AD;&#xC81C;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;. 
+ &#xB300;&#xC2E0; <code>&#xC911;&#xC704; &#xD6C4;&#xC18D;&#xC790;(Inorder Successor)</code>&#xB97C; &#xCC3E;&#xC544; &#xADF8; &#xAC12;&#xC73C;&#xB85C; &#xC0AD;&#xC81C; &#xB300;&#xC0C1; &#xB178;&#xB4DC;&#xB97C; &#xB300;&#xCCB4;&#xD55C;&#xB2E4;.</li>
+<li>&#xC0AD;&#xC81C; &#xD6C4;, &#xC911;&#xC704; &#xD6C4;&#xC18D;&#xC790;&#xAC00; &#xC788;&#xB358; &#xC704;&#xCE58;&#xC5D0;&#xC11C; &#xB178;&#xB4DC;&#xB97C; &#xC0AD;&#xC81C;&#xD55C;&#xB2E4;.</li>
+<li>&#xC0AD;&#xC81C;&#xAC00; &#xC644;&#xB8CC;&#xB41C; &#xB4A4;&#xC5D0;&#xB294; &#xC870;&#xC0C1; &#xB178;&#xB4DC;&#xB4E4;&#xB85C; &#xC62C;&#xB77C;&#xAC00;&#xBA74;&#xC11C; &#xADE0;&#xD615; &#xC778;&#xC218;&#xB97C; &#xAC31;&#xC2E0;&#xD55C;&#xB2E4;.</li>
+<li>&#xBD88;&#xADE0;&#xD615;&#xD55C; &#xB178;&#xB4DC;&#xAC00; &#xBC1C;&#xACAC;&#xB418;&#xBA74; &#xC801;&#xC801;&#xD55C; &#xD68C;&#xC804; &#xC5F0;&#xC0B0;&#xC744; &#xC218;&#xD589;&#xD558;&#xC5EC; &#xD2B8;&#xB9AC;&#xC758; &#xADE0;&#xD615;&#xC744; &#xB9DE;&#xCD98;&#xB2E4;.</li>
+</ol>
+<h3 id="&#xC911;&#xC704;-&#xD6C4;&#xC18D;&#xC790;&#xAC00;-&#xD558;&#xB294;-&#xC5ED;&#xD560;-&#xC815;&#xB9AC;">&#xC911;&#xC704; &#xD6C4;&#xC18D;&#xC790;&#xAC00; &#xD558;&#xB294; &#xC5ED;&#xD560; &#xC815;&#xB9AC;</h3>
+<ol>
+<li>&#xC0AD;&#xC81C;&#xD560; &#xB178;&#xB4DC;&#xAC00; &#xB450; &#xC790;&#xC2DD;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC744; &#xB54C;,</li>
+<li>&#xC911;&#xC704; &#xD6C4;&#xC18D;&#xC790;&#xB294; &#xADF8; &#xB178;&#xB4DC;&#xBCF4;&#xB2E4; &#xD070; &#xAC12; &#xC911;&#xC5D0;&#xC11C; &#xAC00;&#xC7A5; &#xC791;&#xC740; &#xB178;&#xB4DC;&#xC774;&#xB2E4;.</li>
+<li>&#xC774; &#xB178;&#xB4DC;&#xC758; &#xAC12;&#xC744; &#xC0AD;&#xC81C;&#xD560; &#xB178;&#xB4DC;&#xC5D0; &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;&#xC758; &#xC18D;&#xC131;&#xC744; &#xC720;&#xC9C0;&#xD55C;&#xB2E4;.</li>
+</ol>
+<h3 id="&#xC911;&#xC704;-&#xD6C4;&#xC18D;&#xC790;-&#xD310;&#xBCC4;-&#xBC29;&#xBC95;">&#xC911;&#xC704; &#xD6C4;&#xC18D;&#xC790; &#xD310;&#xBCC4; &#xBC29;&#xBC95;</h3>
+<ol>
+<li><p>&#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD;&#xC774; &#xC788;&#xB294; &#xACBD;&#xC6B0;</p>
+<blockquote>
+<p>&#xD6C4;&#xC18D;&#xC790;&#xB294; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xC5D0;&#xC11C; &#xAC00;&#xC7A5; &#xC67C;&#xCABD; &#xB178;&#xB4DC; (&#xCD5C;&#xC18C;&#xAC12; &#xB178;&#xB4DC;)&#xC774;&#xB2E4;.</p>
+</blockquote>
+</li>
+<li><p>&#xC624;&#xB978;&#xCABD; &#xC790;&#xC2DD;&#xC774; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;</p>
+<blockquote>
+<p>&#xD6C4;&#xC18D;&#xC790;&#xB294; &#xC870;&#xC0C1; &#xC911;&#xC5D0;&#xC11C; &#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xBCF4;&#xB2E4; &#xD070; &#xAC12;&#xC744; &#xCC98;&#xC74C; &#xB9CC;&#xB098;&#xB294; &#xB178;&#xB4DC;&#xC774;&#xB2E4;.  </p>
+</blockquote>
+</li>
+</ol>
+<p><img src="AVL_Tree_Image/AVL_Tree_10.png" alt="AVL_Tree_Image"></p>
+<hr>
+<h3 id="avl-tree-&#xD0D0;&#xC0C9;">AVL Tree &#xD0D0;&#xC0C9;</h3>
+<ol>
+<li>&#xD604;&#xC7AC; &#xB178;&#xB4DC;(&#xB8E8;&#xD2B8;)&#xBD80;&#xD130; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;.</li>
+<li>&#xCC3E;&#xACE0;&#xC790; &#xD558;&#xB294; &#xAC12;&#xC774;<ul>
+<li>&#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xBCF4;&#xB2E4; &#xC791;&#xC73C;&#xBA74; &#xC67C;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xB85C; &#xC774;&#xB3D9;&#xD55C;&#xB2E4;.</li>
+<li>&#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xBCF4;&#xB2E4; &#xD06C;&#xBA74; &#xC624;&#xB978;&#xCABD; &#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xB85C; &#xC774;&#xB3D9;&#xD55C;&#xB2E4;.</li>
+<li>&#xAC19;&#xC73C;&#xBA74; &#xAC80;&#xC0C9;&#xC5D0; &#xC131;&#xACF5;&#xD55C;&#xB2E4;.</li>
+</ul>
+</li>
+<li>&#xC11C;&#xBE0C;&#xD2B8;&#xB9AC;&#xB97C; &#xBC18;&#xBCF5;&#xC801;&#xC73C;&#xB85C; &#xB530;&#xB77C;&#xAC00;&#xBA70; &#xAC12;&#xC744; &#xCC3E;&#xB294;&#xB2E4;.</li>
+<li>&#xAC12;&#xC744; &#xCC3E;&#xC9C0; &#xBABB;&#xD558;&#xBA74; <code>None</code> &#xB610;&#xB294; <code>&#xAC80;&#xC0C9; &#xC2E4;&#xD328;</code>&#xB85C; &#xCC98;&#xB9AC;&#xD55C;&#xB2E4;.</li>
+</ol>
+<hr>
+<h3 id="&#xCF54;&#xB4DC;">&#xCF54;&#xB4DC;</h3>
+<pre><code class="lang-c"><span class="hljs-comment">// C program to implement the avl tree</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-comment">// AVL Tree node</span>
+<span class="hljs-keyword">struct</span> Node {
+    <span class="hljs-keyword">int</span> key;
+    <span class="hljs-keyword">struct</span> Node* left;
+    <span class="hljs-keyword">struct</span> Node* right;
+    <span class="hljs-keyword">int</span> height;
+};
+
+<span class="hljs-comment">// Function to get height of the node</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getHeight</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* n)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (n == <span class="hljs-literal">NULL</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> n-&gt;height;
+}
+
+<span class="hljs-comment">// Function to create a new node</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">createNode</span><span class="hljs-params">(<span class="hljs-keyword">int</span> key)</span>
+</span>{
+    <span class="hljs-keyword">struct</span> Node* node
+        = (<span class="hljs-keyword">struct</span> Node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> Node));
+    node-&gt;key = key;
+    node-&gt;left = <span class="hljs-literal">NULL</span>;
+    node-&gt;right = <span class="hljs-literal">NULL</span>;
+    node-&gt;height = <span class="hljs-number">1</span>; <span class="hljs-comment">// New node is initially added at leaf</span>
+    <span class="hljs-keyword">return</span> node;
+}
+
+<span class="hljs-comment">// Utility function to get the maximum of two integers</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">max</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span>
+</span>{
+    <span class="hljs-keyword">return</span> (a &gt; b) ? a : b;
+}
+
+<span class="hljs-comment">// Right rotate subtree rooted with y</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">rightRotate</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* y)</span>
+</span>{
+    <span class="hljs-keyword">struct</span> Node* x = y-&gt;left;
+    <span class="hljs-keyword">struct</span> Node* T2 = x-&gt;right;
+
+    <span class="hljs-comment">// Perform rotation</span>
+    x-&gt;right = y;
+    y-&gt;left = T2;
+
+    <span class="hljs-comment">// Update heights</span>
+    y-&gt;height = max(getHeight(y-&gt;left), getHeight(y-&gt;right)) + <span class="hljs-number">1</span>;
+    x-&gt;height = max(getHeight(x-&gt;left), getHeight(x-&gt;right)) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-comment">// Return new root</span>
+    <span class="hljs-keyword">return</span> x;
+}
+
+<span class="hljs-comment">// Left rotate subtree rooted with x</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">leftRotate</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* x)</span>
+</span>{
+    <span class="hljs-keyword">struct</span> Node* y = x-&gt;right;
+    <span class="hljs-keyword">struct</span> Node* T2 = y-&gt;left;
+
+    <span class="hljs-comment">// Perform rotation</span>
+    y-&gt;left = x;
+    x-&gt;right = T2;
+
+    <span class="hljs-comment">// Update heights</span>
+    x-&gt;height = max(getHeight(x-&gt;left), getHeight(x-&gt;right)) + <span class="hljs-number">1</span>;
+    y-&gt;height = max(getHeight(y-&gt;left), getHeight(y-&gt;right)) + <span class="hljs-number">1</span>;
+
+    <span class="hljs-comment">// Return new root</span>
+    <span class="hljs-keyword">return</span> y;
+}
+
+<span class="hljs-comment">// Get balance factor of node n</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getBalance</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* n)</span>
+</span>{
+    <span class="hljs-keyword">if</span> (n == <span class="hljs-literal">NULL</span>)
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">return</span> getHeight(n-&gt;left) - getHeight(n-&gt;right);
+}
+
+<span class="hljs-comment">// Insert a key in the subtree rooted with node and returns new root of subtree</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">insertNode</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* node, <span class="hljs-keyword">int</span> key)</span>
+</span>{
+    <span class="hljs-comment">// 1. Perform the normal BST insertion</span>
+    <span class="hljs-keyword">if</span> (node == <span class="hljs-literal">NULL</span>)
+        <span class="hljs-keyword">return</span> createNode(key);
+
+    <span class="hljs-keyword">if</span> (key &lt; node-&gt;key)
+        node-&gt;left = insertNode(node-&gt;left, key);
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (key &gt; node-&gt;key)
+        node-&gt;right = insertNode(node-&gt;right, key);
+    <span class="hljs-keyword">else</span> <span class="hljs-comment">// Equal keys are not allowed in AVL tree</span>
+        <span class="hljs-keyword">return</span> node;
+
+    <span class="hljs-comment">// 2. Update height of this ancestor node</span>
+    node-&gt;height = <span class="hljs-number">1</span> + max(getHeight(node-&gt;left), getHeight(node-&gt;right));
+
+    <span class="hljs-comment">// 3. Get the balance factor to check whether this node became unbalanced</span>
+    <span class="hljs-keyword">int</span> balance = getBalance(node);
+
+    <span class="hljs-comment">// If node is unbalanced, then try the 4 cases</span>
+
+    <span class="hljs-comment">// Left Left Case</span>
+    <span class="hljs-keyword">if</span> (balance &gt; <span class="hljs-number">1</span> &amp;&amp; key &lt; node-&gt;left-&gt;key)
+        <span class="hljs-keyword">return</span> rightRotate(node);
+
+    <span class="hljs-comment">// Right Right Case</span>
+    <span class="hljs-keyword">if</span> (balance &lt; <span class="hljs-number">-1</span> &amp;&amp; key &gt; node-&gt;right-&gt;key)
+        <span class="hljs-keyword">return</span> leftRotate(node);
+
+    <span class="hljs-comment">// Left Right Case</span>
+    <span class="hljs-keyword">if</span> (balance &gt; <span class="hljs-number">1</span> &amp;&amp; key &gt; node-&gt;left-&gt;key) {
+        node-&gt;left = leftRotate(node-&gt;left);
+        <span class="hljs-keyword">return</span> rightRotate(node);
+    }
+
+    <span class="hljs-comment">// Right Left Case</span>
+    <span class="hljs-keyword">if</span> (balance &lt; <span class="hljs-number">-1</span> &amp;&amp; key &lt; node-&gt;right-&gt;key) {
+        node-&gt;right = rightRotate(node-&gt;right);
+        <span class="hljs-keyword">return</span> leftRotate(node);
+    }
+
+    <span class="hljs-comment">// Return the unchanged node pointer</span>
+    <span class="hljs-keyword">return</span> node;
+
+
+}
+</code></pre>
+<hr>
+<h3 id="&#xCC38;&#xACE0;&#xD55C;-&#xC790;&#xB8CC;">&#xCC38;&#xACE0;&#xD55C; &#xC790;&#xB8CC;</h3>
+<ul>
+<li>GeeksforGeeks&#xC758; <a href="https://www.geeksforgeeks.org/introduction-to-avl-tree/" target="_blank">Introduction to AVL Tree</a></li>
+<li>GeeksforGeeks&#xC758; <a href="https://www.geeksforgeeks.org/insertion-in-an-avl-tree/" target="_blank">Insertion in an AVL Tree</a></li>
+<li>GeeksforGeeks&#xC758; <a href="https://www.geeksforgeeks.org/deletion-in-an-avl-tree/" target="_blank">Deletion in an AVL Tree</a></li>
+</ul>
+<hr>
+<p>&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;</p>
+<h1 id="&#xB808;&#xB4DC;-&#xBE14;&#xB799;-&#xD2B8;&#xB9AC;red-black-tree">&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;(Red-Black Tree)</h1>
+<p>&#xC790;&#xAC00; &#xADE0;&#xD615; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;(Balanced-BST)&#xC778; &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC758; &#xAD6C;&#xC870;&#xC640; &#xB3D9;&#xC791; &#xC6D0;&#xB9AC;&#xB97C; &#xC774;&#xD574;&#xD558;&#xACE0;, &#xC0BD;&#xC785;&#xACFC; &#xC0AD;&#xC81C; &#xC5F0;&#xC0B0;&#xC5D0;&#xC11C; &#xADE0;&#xD615;&#xC744; &#xC720;&#xC9C0;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xD559;&#xC2B5;&#xD55C;&#xB2E4;.</p>
+<p>| &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xB294; &#xCD5C;&#xC545;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; O(log n)&#xC758; &#xC131;&#xB2A5;&#xC744; &#xBCF4;&#xC7A5;&#xD558;&#xB294; &#xADE0;&#xD615; &#xD2B8;&#xB9AC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;(BST)&#xC758; &#xB2E8;&#xC810;&#xC744; &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xB97C; &#xD1B5;&#xD574; &#xADF9;&#xBCF5;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<h1 id="&#xC8FC;&#xC694;-&#xD0A4;&#xC6CC;&#xB4DC;">&#xC8FC;&#xC694; &#xD0A4;&#xC6CC;&#xB4DC;</h1>
+<table>
+<thead>
+<tr>
+<th>&#xD56D;&#xBAA9;</th>
+<th>&#xC124;&#xBA85;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://jungle9.gitbook.io/kj-book-guide/algorithm#key" target="_blank">&#xC18C;&#xC81C;&#xBAA9;</a></td>
+<td>&#xD575;&#xC2EC; &#xAC1C;&#xB150; &#xBC0F; &#xC6D0;&#xB9AC; &#xC694;&#xC57D;</td>
+</tr>
+<tr>
+<td><a href="https://jungle9.gitbook.io/kj-book-guide/algorithm#graph" target="_blank">&#xCF54;&#xB4DC;&#xC608;&#xC2DC;</a></td>
+<td>Python &#xCF54;&#xB4DC; &#xAE30;&#xBC18; &#xC124;&#xBA85;</td>
+</tr>
+<tr>
+<td><a href="https://jungle9.gitbook.io/kj-book-guide/algorithm#excute" target="_blank">&#xC601;&#xC0C1;&#xCCA8;&#xBD80;&#xC124;&#xC815;</a></td>
+<td>&#xC601;&#xC0C1; &#xBC0F; &#xC774;&#xBBF8;&#xC9C0; &#xCCA8;&#xBD80; &#xBC29;&#xBC95; &#xC548;&#xB0B4;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#xB808;&#xB4DC;-&#xBE14;&#xB799;-&#xD2B8;&#xB9AC;&#xB780;">&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xB780;</h2>
+<p>&#xAC1C;&#xB150; : &#xC774;&#xC9C4; &#xD0D0;&#xC0C9; &#xD2B8;&#xB9AC;(BST)&#xC758; &#xC77C;&#xC885;&#xC778; &#xB808;&#xB4DC;-&#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xB294; &#xAC01; &#xB178;&#xB4DC;&#xAC00; <code>&#xBE68;&#xAC04;&#xC0C9;</code> &#xB610;&#xB294; <code>&#xAC80;&#xC740;&#xC0C9;</code>&#xC758; &#xCD94;&#xAC00; &#xC18D;&#xC131;&#xC744; &#xAC00;&#xC9C4; <code>self-balancing &#xBC14;&#xC774;&#xB108;&#xB9AC; &#xAC80;&#xC0C9; &#xD2B8;&#xB9AC;</code>&#xC774;&#xB2E4;. &#xC774;&#xB7EC;&#xD55C; &#xD2B8;&#xB9AC;&#xC758; &#xC8FC;&#xC694; &#xBAA9;&#xD45C;&#xB294; &#xC0BD;&#xC785; &#xBC0F; &#xC0AD;&#xC81C; &#xC2DC; &#xADE0;&#xD615;&#xC744; &#xC720;&#xC9C0;&#xD558;&#xC5EC; &#xD6A8;&#xC728;&#xC801;&#xC778; &#xB370;&#xC774;&#xD130; &#xAC80;&#xC0C9; &#xBC0F; &#xC870;&#xC791;&#xC744; &#xBCF4;&#xC7A5;&#xD55C;&#xB2E4;.</p>
+<h2 id="&#xB808;&#xB4DC;-&#xBE14;&#xB799;-&#xD2B8;&#xB9AC;&#xC758;-&#xC18D;&#xC131;">&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC758; &#xC18D;&#xC131;</h2>
+<ol>
+<li>&#xB178;&#xB4DC; &#xC0C9;&#xC0C1; : &#xAC01; &#xB178;&#xB4DC;&#xB294; &#xB808;&#xB4DC; &#xD639;&#xC740; &#xBE14;&#xB799; &#xC0C9;&#xC0C1;&#xC774;&#xB2E4;.</li>
+<li>&#xB8E8;&#xD2B8; &#xB178;&#xB4DC; : &#xB8E8;&#xD2B8;&#xB294; &#xC5B8;&#xC81C;&#xB098; &#xBE14;&#xB799; &#xC0C9;&#xC0C1;&#xC774;&#xB2E4;.</li>
+<li>&#xB808;&#xB4DC; &#xB178;&#xB4DC; : &#xB808;&#xB4DC; &#xB178;&#xB4DC;&#xB294; &#xC790;&#xC2DD;&#xC73C;&#xB85C; &#xB808;&#xB4DC;&#xB97C; &#xAC00;&#xC9C8; &#xC218; &#xC5C6;&#xB2E4;. (&#xB808;&#xB4DC; &#xB178;&#xB4DC;&#xC758; &#xC790;&#xC2DD;&#xC740; &#xAC80;&#xC815;&#xC0C9;&#xC774;&#xB2E4;)</li>
+<li>&#xC5B4;&#xB5A4; &#xB178;&#xB4DC;&#xC5D0;&#xC11C; &#xADF8; &#xC790;&#xC190;&#xC758; &#xBAA8;&#xB4E0; &#xB9AC;&#xD504; &#xB178;&#xB4DC;(&#xC989;, null &#xB178;&#xB4DC;)&#xB85C; &#xAC00;&#xB294; &#xBAA8;&#xB4E0; &#xACBD;&#xB85C;&#xC5D0;&#xB294; &#xAC19;&#xC740; &#xC218;&#xC758; &#xAC80;&#xC740;&#xC0C9; &#xB178;&#xB4DC;&#xAC00; &#xC874;&#xC7AC;&#xD574;&#xC57C; &#xD55C;&#xB2E4;.</li>
+</ol>
+<pre><code>             (B)
+          /       \
+        (R)       (B)
+       /             \
+     (B)             (R)
+  /       \        /     \
+null(B) null(B) null(B) null(B)
+</code></pre><ol>
+<li>&#xB9AC;&#xD504; &#xB178;&#xB4DC; : NIL(Null Leaf)&#xC740; &#xC5B8;&#xC81C;&#xB098; &#xBE14;&#xB799;&#xC774;&#xB2E4;.</li>
+</ol>
+<h2 id="&#xC65C;-&#xB808;&#xB4DC;-&#xBE14;&#xB799;-&#xD2B8;&#xB9AC;&#xC77C;&#xAE4C;">&#xC65C; &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC77C;&#xAE4C;?</h2>
+<p>&#xBAA8;&#xB4E0; &#xC0BD;&#xC785; &#xBC0F; &#xC0AD;&#xC81C; &#xD6C4;&#xC5D0;&#xB3C4; &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;&#xAC00; O(log n)&#xB85C; &#xC720;&#xC9C0;&#xB418;&#xB3C4;&#xB85D; &#xD558;&#xBA74; &#xC774;&#xB7EC;&#xD55C; &#xBAA8;&#xB4E0; &#xC791;&#xC5C5;&#xC5D0; &#xB300;&#xD574; O(log n)&#xC758; &#xC0C1;&#xD55C;&#xC744; &#xBCF4;&#xC7A5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. Red-Black &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;&#xB294; &#xD56D;&#xC0C1; O(log n)&#xC774;&#xBA70;, &#xC5EC;&#xAE30;&#xC11C; n&#xC740; &#xD2B8;&#xB9AC;&#xC758; &#xB178;&#xB4DC; &#xC218; &#xC774;&#xB2E4;.</p>
+<table>
+<thead>
+<tr>
+<th><strong>&#xC54C;&#xACE0;&#xB9AC;&#xC998;</strong></th>
+<th><strong>&#xC2DC;&#xAC04; &#xBCF5;&#xC7A1;&#xB3C4;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#xAC80;&#xC0C9;</td>
+<td>O(log n)</td>
+</tr>
+<tr>
+<td>&#xC0BD;&#xC785;</td>
+<td>O(log n)</td>
+</tr>
+<tr>
+<td>&#xC0AD;&#xC81C;</td>
+<td>O(log n)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="avl&#xC640;-&#xBE44;&#xAD50;">AVL&#xC640; &#xBE44;&#xAD50;</h2>
+<p>AVL &#xD2B8;&#xB9AC;&#xB294; &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC5D0; &#xBE44;&#xD574; &#xADE0;&#xD615;&#xC774; &#xB354; &#xC798; &#xC7A1;&#xD600; &#xC788;&#xB2E4;. </p>
+<p>&#xC0BD;&#xC785;&#xACFC; &#xC0AD;&#xC81C;&#xAC00; &#xB354; &#xC790;&#xC8FC; &#xC788;&#xB2E4;&#xBA74; AVL &#xD2B8;&#xB9AC; &#xBCF4;&#xB2E4;, &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.</p>
+<p>&#xAC80;&#xC0C9;&#xC774; &#xC8FC;&#xC694; &#xC791;&#xC5C5;&#xC774;&#xB77C;&#xBA74; AVL &#xD2B8;&#xB9AC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC9C0;&#xC18D;&#xC801;&#xC778; &#xC0BD;&#xC785;, &#xC0AD;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;&#xBA74; &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC; &#xC0AC;&#xC6A9;&#xB3C4; &#xC88B;&#xC9C0; &#xC54A;&#xC744; &#xC218; &#xC788;&#xB2E4;.</p>
+<h2 id="&#xB808;&#xB4DC;-&#xBE14;&#xB799;-&#xD2B8;&#xB9AC;&#xC758;-&#xAE30;&#xBCF8;-&#xB3D9;&#xC791;">&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC758; &#xAE30;&#xBCF8; &#xB3D9;&#xC791;</h2>
+<ol>
+<li>&#xC0BD;&#xC785;</li>
+<li>&#xAC80;&#xC0C9;</li>
+<li>&#xC0AD;&#xC81C;</li>
+<li>&#xD68C;&#xC804;</li>
+</ol>
+<h3 id="&#xC0BD;&#xC785;">&#xC0BD;&#xC785;</h3>
+<p><strong>&#xC0BD;&#xC785; &#xBC29;&#xBC95;</strong></p>
+<ol>
+<li>BST &#xC0BD;&#xC785; : BST &#xCC98;&#xB7FC; &#xC0C8;&#xB85C;&#xC6B4; &#xB178;&#xB4DC;&#xB97C; &#xC0BD;&#xC785; (&#xC0BD;&#xC785;&#xB418;&#xB294; &#xB178;&#xB4DC;&#xC758; &#xC0C9;&#xC740; &#xD56D;&#xC0C1; &#xB808;&#xB4DC;&#xC774;&#xB2E4;)</li>
+<li>&#xC704;&#xBC18; &#xC2DC; &#xC218;&#xC815;</li>
+<li><p><strong>&#xCF00;&#xC774;&#xC2A4; 1: &#xC0BC;&#xCD0C;&#xC774; &#xB808;&#xB4DC;&#xC77C; &#xB54C;</strong>: &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xC640; &#xC0BC;&#xCD0C;&#xC758; &#xCEEC;&#xB7EC;&#xB97C; &#xBE14;&#xB799;&#xC73C;&#xB85C; &#xBCC0;&#xACBD;&#xD558;&#xACE0; &#xD560;&#xC544;&#xBC84;&#xC9C0; &#xB178;&#xB4DC;&#xB97C; &#xB808;&#xB4DC;&#xB85C; &#xBC14;&#xAFBC;&#xB2E4;.</p>
+<p>  <img src="Red_Black_Tree_Image/Group_82.png" alt="Group 82.png"></p>
+<p>  &#xB2E8;, &#xD560;&#xC544;&#xBC84;&#xC9C0; &#xB178;&#xB4DC;&#xAC00; root&#xC774;&#xBA74; &#xBE14;&#xB799;&#xC744; &#xC720;&#xC9C0;&#xD55C;&#xB2E4;.</p>
+</li>
+<li><p><strong>&#xCF00;&#xC774;&#xC2A4; 2: &#xC0BC;&#xCD0C;&#xC774; &#xBE14;&#xB799;&#xC77C; &#xB54C;</strong>:</p>
+<ul>
+<li><p>&#xC11C;&#xBE0C; &#xCF00;&#xC774;&#xC2A4; 2.1: &#xC0BD;&#xC785; &#xB178;&#xB4DC;&#xAC00; &#xC624;&#xB978;&#xCABD;&#xC77C; &#xB54C;: Left-Right &#xD68C;&#xC804;</p>
+<p>  <img src="Red_Black_Tree_Image/&#xC0BD;&#xC785;_&#xC704;&#xBC18;_&#xC218;&#xC815;_&#xCF00;&#xC774;&#xC2A4;_2_&#xC624;&#xB978;&#xCABD;__&#xC790;&#xC2DD;.png" alt="&#x1109;&#x1161;&#x11B8;&#x110B;&#x1175;&#x11B8; &#x110B;&#x1171;&#x1107;&#x1161;&#x11AB; &#x1109;&#x116E;&#x110C;&#x1165;&#x11BC; &#x110F;&#x1166;&#x110B;&#x1175;&#x1109;&#x1173; 2 &#x110B;&#x1169;&#x1105;&#x1173;&#x11AB;&#x110D;&#x1169;&#x11A8;  &#x110C;&#x1161;&#x1109;&#x1175;&#x11A8;.png"></p>
+</li>
+<li><p>&#xC11C;&#xBE0C; &#xCF00;&#xC774;&#xC2A4; 2.2: &#xC0BD;&#xC785; &#xB178;&#xB4DC;&#xAC00; &#xC67C;&#xCABD; &#xC77C; &#xB54C;: Right &#xD68C;&#xC804;</p>
+<p>  <img src="Red_Black_Tree_Image/&#xC0BD;&#xC785;_&#xC704;&#xBC18;_&#xC218;&#xC815;_&#xCF00;&#xC774;&#xC2A4;_2_&#xC67C;&#xCABD;__&#xC790;&#xC2DD;.png" alt="&#x1109;&#x1161;&#x11B8;&#x110B;&#x1175;&#x11B8; &#x110B;&#x1171;&#x1107;&#x1161;&#x11AB; &#x1109;&#x116E;&#x110C;&#x1165;&#x11BC; &#x110F;&#x1166;&#x110B;&#x1175;&#x1109;&#x1173; 2 &#x110B;&#x116C;&#x11AB;&#x110D;&#x1169;&#x11A8;  &#x110C;&#x1161;&#x1109;&#x1175;&#x11A8;.png"></p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="&#xAC80;&#xC0C9;">&#xAC80;&#xC0C9;</h3>
+<p>&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC758; &#xAC80;&#xC0C9;&#xC740; BST&#xC640; &#xBE44;&#xC2B7;&#xD558;&#xB2E4;.</p>
+<p><strong>&#xAC80;&#xC0C9; &#xBC29;&#xBC95;</strong></p>
+<ol>
+<li>&#xB8E8;&#xD2B8;&#xC5D0;&#xC11C; &#xC2DC;&#xC791;</li>
+<li>&#xD2B8;&#xB9AC;&#xB97C; &#xC21C;&#xD68C;<ul>
+<li>&#xD0C0;&#xAC9F; &#xAC12;&#xACFC; &#xD604;&#xC7AC; &#xB178;&#xB4DC;&#xAC00; &#xAC19;&#xC744; &#xB54C; &#xC644;&#xB8CC;</li>
+<li>&#xD0C0;&#xAC9F; &#xAC12;&#xC774; &#xD604;&#xC7AC; &#xB178;&#xB4DC; &#xBCF4;&#xB2E4; &#xC791;&#xB2E4;&#xBA74; &#xC67C;&#xCABD;&#xC73C;&#xB85C; &#xC774;&#xB3D9;</li>
+<li>&#xD0C0;&#xAC9F; &#xAC12;&#xC774; &#xD604;&#xC7AC; &#xB178;&#xB4DC; &#xBCF4;&#xB2E4; &#xD06C;&#xB2E4;&#xBA74; &#xC624;&#xB978;&#xCABD;&#xC73C;&#xB85C; &#xC774;&#xB3D9;</li>
+</ul>
+</li>
+<li>&#xBC18;&#xBCF5; : &#xD0C0;&#xAC9F; &#xAC12;&#xC744; &#xCC3E;&#xC744; &#xB54C;&#xAE4C;&#xC9C0; &#xBC18;&#xBCF5;&#xD558;&#xAC70;&#xB098; NIL(Null Leaf)&#xC5D0; &#xB3C4;&#xB2EC;&#xD560; &#xB54C;&#xAE4C;&#xC9C0; &#xBC18;&#xBCF5;&#xD55C;&#xB2E4;.</li>
+</ol>
+<h3 id="&#xC0AD;&#xC81C;">&#xC0AD;&#xC81C;</h3>
+<p>&#xC0AD;&#xC81C; &#xBC29;&#xBC95;</p>
+<ol>
+<li>BST &#xC0AD;&#xC81C;: &#xB178;&#xB4DC; &#xC0AD;&#xC81C; &#xC2DC; BST &#xADDC;&#xCE59;&#xC744; &#xB530;&#xB978;&#xB2E4;.</li>
+<li>&#xB808;&#xB4DC; &#xB178;&#xB4DC;: &#xB808;&#xB4DC; &#xB178;&#xB4DC; &#xC77C; &#xACBD;&#xC6B0; BST &#xADDC;&#xCE59;&#xC744; &#xB530;&#xB974;&#xBA70; &#xC0AD;&#xC81C; &#xD55C;&#xB2E4;.</li>
+<li>&#xB354;&#xBE14; &#xBE14;&#xB799; &#xC218;&#xC815;: &#xBE14;&#xB799; &#xB178;&#xB4DC;&#xAC00; &#xC0AD;&#xC81C;&#xB420; &#xC2DC;, &#x201C;&#xB354;&#xBE14; &#xBE14;&#xB799;&#x201D; &#xC870;&#xAC74;&#xC774; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;.</li>
+</ol>
+<blockquote>
+<p><code>&#xB354;&#xBE14; &#xBE14;&#xB799;&#xC774;&#xB780;?</code>
+&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC5D0;&#xC11C; &#xB178;&#xB4DC;&#xB97C; &#xC0AD;&#xC81C;&#xD558;&#xBA74;, &#xD2B8;&#xB9AC;&#xC758; &#xBE14;&#xB799; &#xB178;&#xB4DC;&#xAC00; &#xBD80;&#xC871;&#xD574;&#xC9C0;&#xB294; &#xC0C1;&#xD669;&#xC744; &#xB9D0;&#xD55C;&#xB2E4;.
+<strong>&#xC9C0;&#xAE08; black height&#xAC00; &#xB9DE;&#xC9C0; &#xC54A;&#xC74C;&#xC744; &#xC54C;&#xB824;&#xC8FC;&#xB294; &#xB9C8;&#xCEE4;</strong> &#xAC19;&#xC740; &#xC5ED;&#xD560;&#xC744; &#xD55C;&#xB2E4;.</p>
+<p>&#xC774;&#xAC74; &quot;<strong>&#xC5EC;&#xAE30; &#xC544;&#xC9C1; &#xAC80;&#xC815;&#xC774; &#xD558;&#xB098; &#xBD80;&#xC871;&#xD574;</strong>&quot;&#xB77C;&#xB294; &#xC2E0;&#xD638;&#xC774;&#xC790;, &#xC774;&#xD6C4;&#xC758; &#xBCF4;&#xC815;&#xC744; &#xC720;&#xB3C4;&#xD558;&#xB294; &#xC7A5;&#xCE58;&#xB2E4;.</p>
+<p><strong>extra &#xBE14;&#xB799;</strong>
+&#xC0AD;&#xC81C;&#xB418;&#xB294; &#xC0C9;&#xC774; &#xBE14;&#xB799;&#xC774;&#xACE0;, 4&#xBC88; &#xC704;&#xBC18;&#xC77C; &#xB54C; <code>extra &#xBE14;&#xB799; &#xBD80;&#xC5EC;</code>
+&#xC774;&#xB97C; &#xBD80;&#xC5EC; &#xBC1B;&#xC740; &#xB178;&#xB4DC;&#xB294; <code>&#xB354;&#xBE14; &#xBE14;&#xB799;</code> &#xD639;&#xC740; <code>&#xB808;&#xB4DC; &#xC564;&#xB4DC; &#xBE14;&#xB799;</code>&#xC774; &#xB41C;&#xB2E4;.</p>
+</blockquote>
+<p>&#xB300;&#xCCB4;&#xD55C; &#xB178;&#xB4DC;&#xAC00; &#xB808;&#xB4DC; &#xC564;&#xB4DC; &#xBE14;&#xB799;&#xC774; &#xB418;&#xC5C8;&#xB2E4;&#xBA74; &#xBE14;&#xB799;&#xC73C;&#xB85C; &#xBC14;&#xAFD4;&#xC8FC;&#xBA74; &#xB05D;&#xC774;&#xB2E4;.</p>
+<blockquote>
+<ul>
+<li>30(B)&#xB97C; &#xC0AD;&#xC81C;&#xD588;&#xC5B4;.</li>
+<li>&#xADF8; &#xC790;&#xB9AC;&#xB97C; &#xB300;&#xCCB4;&#xD55C; 25(R)&#xB294; &#xC6D0;&#xB798; red&#xC600;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xADF8;&#xB300;&#xB85C;&#xB294; black height&#xAC00; &#xBD80;&#xC871;&#xD574;.</li>
+<li>&#xADF8;&#xB798;&#xC11C; 25&#xC5D0; <strong>extra black&#xC744; &#xBD80;&#xC5EC;&#xD574;&#xC11C; &quot;red-and-black&quot; &#xC0C1;&#xD0DC;</strong>&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;.</li>
+<li>&#xADF8; &#xC0C1;&#xD0DC;&#xC5D0;&#xC11C;&#xB294; black height&#xAC00; 2&#xAC00; &#xB418;&#xBBC0;&#xB85C;, **&#xC77C;&#xC2DC;&#xC801;&#xC73C;&#xB85C;&#xB294; &#xC18D;&#xC131; 4&#xB97C; &#xB9CC;&#xC871;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;.</li>
+</ul>
+<p>extra &#xBE14;&#xB799;&#xC740; &#xC784;&#xC2DC; &#xBD09;&#xD569;&#xC774;&#xB2E4;.**</p>
+</blockquote>
+<ul>
+<li>&#xCF00;&#xC774;&#xC2A4; 1: &#xD615;&#xC81C; &#xB178;&#xB4DC;&#xAC00; &#xB808;&#xB4DC;&#xC77C; &#xB54C;: &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xB97C; &#xD68C;&#xC804; &#xC2DC;&#xD0A4;&#xACE0;, &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xC640; &#xD615;&#xC81C; &#xB178;&#xB4DC;&#xC758; &#xC0C9;&#xC0C1;&#xC744; &#xBCC0;&#xACBD;&#xD55C;&#xB2E4;.</li>
+</ul>
+<p><img src="Red_Black_Tree_Image/&#xC0AD;&#xC81C;_1.png" alt="&#x1109;&#x1161;&#x11A8;&#x110C;&#x1166; 1.png"></p>
+<ul>
+<li><p>&#xCF00;&#xC774;&#xC2A4; 2: &#xD615;&#xC81C; &#xB178;&#xB4DC;&#xAC00; &#xBE14;&#xB799;&#xC77C; &#xB54C;:</p>
+<ul>
+<li><p>&#xC11C;&#xBE0C;&#xCF00;&#xC774;&#xC2A4; 2.1: &#xD615;&#xC81C; &#xB178;&#xB4DC;&#xC758; &#xC790;&#xC2DD;&#xC774; &#xBE14;&#xB799;&#xC77C; &#xB54C;: &#xD615;&#xC81C;&#xC758; &#xCEEC;&#xB7EC;&#xB97C; &#xBC14;&#xAFB8;&#xACE0; &#xB354;&#xBE14; &#xBE14;&#xB799;&#xC744; &#xC704;&#xB85C; &#xBCF4;&#xB0B8;&#xB2E4;.</p>
+<p>  <img src="Red_Black_Tree_Image/&#xC0AD;&#xC81C;_2.1.png" alt="&#x1109;&#x1161;&#x11A8;&#x110C;&#x1166; 2.1.png"></p>
+</li>
+<li><p>2.2: &#xD615;&#xC81C;&#xC758; &#xC790;&#xC2DD; &#xC911; &#xD558;&#xB098;&#xB77C;&#xB3C4; &#xB808;&#xB4DC;&#xC77C; &#xB54C;:</p>
+<ul>
+<li><p>2.2.1 &#xD615;&#xC81C;&#xC758; &#xBA3C; &#xC790;&#xC2DD;&#xC774; &#xB808;&#xB4DC;&#xC77C; &#xB54C;: &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xC640; &#xD615;&#xC81C;&#xB97C; &#xD68C;&#xC804;&#xD558;&#xACE0; &#xC54C;&#xB9DE;&#xAC8C; &#xCEEC;&#xB7EC;&#xB97C; &#xC218;&#xC815;&#xD55C;&#xB2E4;.</p>
+<p>  &#xC791;&#xB3D9;: &#xC774; &#xC870;&#xAC74;&#xC77C; &#xB54C; <code>&#xC624;&#xB978;&#xCABD; &#xD615;&#xC81C;</code>&#xB294; &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xC758; &#xC0C9;&#xC73C;&#xB85C;, <code>&#xC624;&#xB978;&#xCABD; &#xD615;&#xC81C;&#xC758; &#xC624;&#xB978;&#xCABD; &#xC790;&#xB140;</code>&#xB294; &#xBE14;&#xB799;&#xC73C;&#xB85C;, &#xD560;&#xC544;&#xBC84;&#xC9C0;&#xB294; &#xBE14;&#xB799;&#xC73C;&#xB85C; &#xBC14;&#xAFBC; &#xD6C4; <code>&#xD560;&#xC544;&#xBC84;&#xC9C0;</code>&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC67C;&#xCABD; &#xD68C;&#xC804;&#xD55C;&#xB2E4;.  (&#xC624;&#xB978;&#xCABD; &#xC67C;&#xCABD; &#xBC14;&#xAFD4;&#xB3C4; &#xC131;&#xB9BD;)</p>
+<p>  <img src="Red_Black_Tree_Image/&#xC0AD;&#xC81C;_2.2.1_&#xD615;&#xC81C;_&#xB178;&#xB4DC;&#xC758;_&#xC790;&#xC2DD;_&#xC911;_&#xD558;&#xB098;&#xB77C;&#xB3C4;_&#xB808;&#xB4DC;.png" alt="&#x1109;&#x1161;&#x11A8;&#x110C;&#x1166; 2.2.1 &#x1112;&#x1167;&#x11BC;&#x110C;&#x1166; &#x1102;&#x1169;&#x1103;&#x1173;&#x110B;&#x1174; &#x110C;&#x1161;&#x1109;&#x1175;&#x11A8; &#x110C;&#x116E;&#x11BC; &#x1112;&#x1161;&#x1102;&#x1161;&#x1105;&#x1161;&#x1103;&#x1169; &#x1105;&#x1166;&#x1103;&#x1173;.png"></p>
+</li>
+<li><p>2.2.2 &#xD615;&#xC81C;&#xC758; &#xAC00;&#xAE4C;&#xC6B4; &#xC790;&#xC2DD;&#xC774; &#xB808;&#xB4DC;&#xC77C; &#xB54C;: &#xD615;&#xC81C;&#xC640; &#xD615;&#xC81C;&#xC758; &#xC790;&#xC2DD;&#xC744; &#xD68C;&#xC804; &#xC2DC;&#xD0A8; &#xD6C4; &#xCF00;&#xC774;&#xC2A4;(2.2.1)&#xB97C; &#xD1B5;&#xD574; &#xC54C;&#xB9DE;&#xAC8C; &#xC218;&#xC815;&#xD55C;&#xB2E4;.</p>
+<p><img src="Red_Black_Tree_Image/&#xC0AD;&#xC81C;_2.2.2_&#xD615;&#xC81C;_&#xB178;&#xB4DC;&#xC758;_&#xC790;&#xC2DD;_&#xC911;_&#xD558;&#xB098;&#xB77C;&#xB3C4;_&#xB808;&#xB4DC;.png" alt="&#x1109;&#x1161;&#x11A8;&#x110C;&#x1166; 2.2.2 &#x1112;&#x1167;&#x11BC;&#x110C;&#x1166; &#x1102;&#x1169;&#x1103;&#x1173;&#x110B;&#x1174; &#x110C;&#x1161;&#x1109;&#x1175;&#x11A8; &#x110C;&#x116E;&#x11BC; &#x1112;&#x1161;&#x1102;&#x1161;&#x1105;&#x1161;&#x1103;&#x1169; &#x1105;&#x1166;&#x1103;&#x1173;.png"></p>
+<h2 id="&#xC0AC;&#xC6A9;-&#xC608;&#xC2DC;">&#xC0AC;&#xC6A9; &#xC608;&#xC2DC;</h2>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>maps &amp; sets</li>
+<li>&#xC6B0;&#xC120;&#xC21C;&#xC704; &#xD050;</li>
+<li>&#xD30C;&#xC77C; &#xC2DC;&#xC2A4;&#xD15C;</li>
+<li>&#xC778;-&#xBA54;&#xBAA8;&#xB9AC; &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;</li>
+<li>&#xADF8;&#xB798;&#xD53D;&#xACFC; &#xAC8C;&#xC784; &#xAC1C;&#xBC1C;</li>
+</ul>
+<h1 id="&#xCF54;&#xB4DC;&#xC608;&#xC2DC;">&#xCF54;&#xB4DC;&#xC608;&#xC2DC;</h1>
+<p>&#xC544;&#xB798;&#xB294; C &#xC5B8;&#xC5B4;&#xB85C; &#xC791;&#xC131;&#xD55C; &#xC790;&#xB8CC;&#xAD6C;&#xC870; &#xC608;&#xC2DC;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+
+<span class="hljs-comment">// &#xB178;&#xB4DC; &#xD074;&#xB77C;&#xC2A4;</span>
+<span class="hljs-keyword">struct</span> Node {
+    <span class="hljs-keyword">int</span> data;
+    <span class="hljs-built_in">string</span> color;
+    Node *left, *right, *parent;
+
+    Node(<span class="hljs-keyword">int</span> data)
+        : data(data)
+        , color(<span class="hljs-string">&quot;RED&quot;</span>)
+        , left(<span class="hljs-literal">nullptr</span>)
+        , right(<span class="hljs-literal">nullptr</span>)
+        , parent(<span class="hljs-literal">nullptr</span>)
+    {
+    }
+};
+
+<span class="hljs-comment">// &#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC; &#xD074;&#xB77C;&#xC2A4;</span>
+<span class="hljs-keyword">class</span> RedBlackTree {
+<span class="hljs-keyword">private</span>:
+    Node* root;
+    Node* NIL;
+
+    <span class="hljs-comment">// &#xC67C;&#xCABD; &#xD68C;&#xC804;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">left_rotate</span><span class="hljs-params">(Node* x)</span>
+    </span>{
+        Node* y = x-&gt;right;
+        x-&gt;right = y-&gt;left;
+        <span class="hljs-keyword">if</span> (y-&gt;left != NIL) {
+            y-&gt;left-&gt;parent = x;
+        }
+        y-&gt;parent = x-&gt;parent;
+        <span class="hljs-keyword">if</span> (x-&gt;parent == <span class="hljs-literal">nullptr</span>) {
+            root = y;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == x-&gt;parent-&gt;left) {
+            x-&gt;parent-&gt;left = y;
+        }
+        <span class="hljs-keyword">else</span> {
+            x-&gt;parent-&gt;right = y;
+        }
+        y-&gt;left = x;
+        x-&gt;parent = y;
+    }
+
+    <span class="hljs-comment">// &#xC624;&#xB978;&#xCABD; &#xD68C;&#xC804;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">right_rotate</span><span class="hljs-params">(Node* x)</span>
+    </span>{
+        Node* y = x-&gt;left;
+        x-&gt;left = y-&gt;right;
+        <span class="hljs-keyword">if</span> (y-&gt;right != NIL) {
+            y-&gt;right-&gt;parent = x;
+        }
+        y-&gt;parent = x-&gt;parent;
+        <span class="hljs-keyword">if</span> (x-&gt;parent == <span class="hljs-literal">nullptr</span>) {
+            root = y;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == x-&gt;parent-&gt;right) {
+            x-&gt;parent-&gt;right = y;
+        }
+        <span class="hljs-keyword">else</span> {
+            x-&gt;parent-&gt;left = y;
+        }
+        y-&gt;right = x;
+        x-&gt;parent = y;
+    }
+
+    <span class="hljs-comment">// &#xC0BD;&#xC785; &#xD6C4; &#xC218;&#xC815;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">fix_insert</span><span class="hljs-params">(Node* k)</span>
+    </span>{
+        <span class="hljs-keyword">while</span> (k != root &amp;&amp; k-&gt;parent-&gt;color == <span class="hljs-string">&quot;RED&quot;</span>) {
+            <span class="hljs-keyword">if</span> (k-&gt;parent == k-&gt;parent-&gt;parent-&gt;left) {
+                Node* u = k-&gt;parent-&gt;parent-&gt;right; <span class="hljs-comment">// &#xC0BC;&#xCD0C;</span>
+                <span class="hljs-keyword">if</span> (u-&gt;color == <span class="hljs-string">&quot;RED&quot;</span>) {
+                    k-&gt;parent-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    u-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    k-&gt;parent-&gt;parent-&gt;color = <span class="hljs-string">&quot;RED&quot;</span>;
+                    k = k-&gt;parent-&gt;parent;
+                }
+                <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">if</span> (k == k-&gt;parent-&gt;right) {
+                        k = k-&gt;parent;
+                        leftRotate(k);
+                    }
+                    k-&gt;parent-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    k-&gt;parent-&gt;parent-&gt;color = <span class="hljs-string">&quot;RED&quot;</span>;
+                    rightRotate(k-&gt;parent-&gt;parent);
+                }
+            }
+            <span class="hljs-keyword">else</span> {
+                Node* u = k-&gt;parent-&gt;parent-&gt;left; <span class="hljs-comment">// &#xC0BC;&#xCD0C;&#x314B;</span>
+                <span class="hljs-keyword">if</span> (u-&gt;color == <span class="hljs-string">&quot;RED&quot;</span>) {
+                    k-&gt;parent-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    u-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    k-&gt;parent-&gt;parent-&gt;color = <span class="hljs-string">&quot;RED&quot;</span>;
+                    k = k-&gt;parent-&gt;parent;
+                }
+                <span class="hljs-keyword">else</span> {
+                    <span class="hljs-keyword">if</span> (k == k-&gt;parent-&gt;left) {
+                        k = k-&gt;parent;
+                        rightRotate(k);
+                    }
+                    k-&gt;parent-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+                    k-&gt;parent-&gt;parent-&gt;color = <span class="hljs-string">&quot;RED&quot;</span>;
+                    leftRotate(k-&gt;parent-&gt;parent);
+                }
+            }
+        }
+        root-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+    }
+
+    <span class="hljs-comment">// &#xC21C;&#xC11C; &#xC774;&#xB3D9; &#xB3C4;&#xC6B0;&#xBBF8;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">inorder_helper</span><span class="hljs-params">(Node* node)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (node != NIL) {
+            inorderHelper(node-&gt;left);
+            <span class="hljs-built_in">cout</span> &lt;&lt; node-&gt;data &lt;&lt; <span class="hljs-string">&quot; &quot;</span>;
+            inorderHelper(node-&gt;right);
+        }
+    }
+
+    <span class="hljs-comment">// &#xAC80;&#xC0C9; &#xB3C4;&#xC6B0;&#xBBF8;</span>
+    <span class="hljs-function">Node* <span class="hljs-title">search_helper</span><span class="hljs-params">(Node* node, <span class="hljs-keyword">int</span> data)</span>
+    </span>{
+        <span class="hljs-keyword">if</span> (node == NIL || data == node-&gt;data) {
+            <span class="hljs-keyword">return</span> node;
+        }
+        <span class="hljs-keyword">if</span> (data &lt; node-&gt;data) {
+            <span class="hljs-keyword">return</span> searchHelper(node-&gt;left, data);
+        }
+        <span class="hljs-keyword">return</span> searchHelper(node-&gt;right, data);
+    }
+
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-comment">// Constructor</span>
+    RedBlackTree()
+    {
+        NIL = <span class="hljs-keyword">new</span> Node(<span class="hljs-number">0</span>);
+        NIL-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+        NIL-&gt;left = NIL-&gt;right = NIL;
+        root = NIL;
+    }
+
+    <span class="hljs-comment">// &#xC0BD;&#xC785;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span>
+    </span>{
+        Node* new_node = <span class="hljs-keyword">new</span> Node(data);
+        new_node-&gt;left = NIL;
+        new_node-&gt;right = NIL;
+
+        Node* parent = <span class="hljs-literal">nullptr</span>;
+        Node* current = root;
+
+        <span class="hljs-comment">// BST insert</span>
+        <span class="hljs-keyword">while</span> (current != NIL) {
+            parent = current;
+            <span class="hljs-keyword">if</span> (new_node-&gt;data &lt; current-&gt;data) {
+                current = current-&gt;left;
+            }
+            <span class="hljs-keyword">else</span> {
+                current = current-&gt;right;
+            }
+        }
+
+        new_node-&gt;parent = parent;
+
+        <span class="hljs-keyword">if</span> (parent == <span class="hljs-literal">nullptr</span>) {
+            root = new_node;
+        }
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (new_node-&gt;data &lt; parent-&gt;data) {
+            parent-&gt;left = new_node;
+        }
+        <span class="hljs-keyword">else</span> {
+            parent-&gt;right = new_node;
+        }
+
+        <span class="hljs-keyword">if</span> (new_node-&gt;parent == <span class="hljs-literal">nullptr</span>) {
+            new_node-&gt;color = <span class="hljs-string">&quot;BLACK&quot;</span>;
+            <span class="hljs-keyword">return</span>;
+        }
+
+        <span class="hljs-keyword">if</span> (new_node-&gt;parent-&gt;parent == <span class="hljs-literal">nullptr</span>) {
+            <span class="hljs-keyword">return</span>;
+        }
+
+        fix_insert(new_node);
+    }
+
+    <span class="hljs-comment">// &#xC21C;&#xC11C; &#xC774;&#xB3D9;</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">inorder</span><span class="hljs-params">()</span> </span>{ inorder_helper(root); }
+
+    <span class="hljs-comment">// &#xAC80;&#xC0C9;</span>
+    <span class="hljs-function">Node* <span class="hljs-title">search</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span>
+    </span>{
+        <span class="hljs-keyword">return</span> search_helper(root, data);
+    }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    RedBlackTree rbt;
+
+    rbt.insert(<span class="hljs-number">10</span>);
+    rbt.insert(<span class="hljs-number">20</span>);
+    rbt.insert(<span class="hljs-number">30</span>);
+    rbt.insert(<span class="hljs-number">15</span>);
+
+    <span class="hljs-comment">// &#xC21C;&#xC11C; &#xC774;&#xB3D9;</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Inorder traversal:&quot;</span> &lt;&lt; <span class="hljs-built_in">endl</span>;
+    rbt.inorder(); <span class="hljs-comment">// Output: 10 15 20 30</span>
+
+    <span class="hljs-comment">// &#xB178;&#xB4DC; &#xAC80;&#xC0C9;</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;\nSearch for 15: &quot;</span>
+         &lt;&lt; (rbt.search(<span class="hljs-number">15</span>) != rbt.search(<span class="hljs-number">0</span>))
+         &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// Output: 1 (true)</span>
+    <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">&quot;Search for 25: &quot;</span>
+         &lt;&lt; (rbt.search(<span class="hljs-number">25</span>) != rbt.search(<span class="hljs-number">0</span>))
+         &lt;&lt; <span class="hljs-built_in">endl</span>; <span class="hljs-comment">// Output: 0 (false)</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h1 id="&#xC601;&#xC0C1;&#xCCA8;&#xBD80;&#xC124;&#xC815;">&#xC601;&#xC0C1;&#xCCA8;&#xBD80;&#xC124;&#xC815;</h1>
+<p>&#xAE00;&#xB85C; &#xC124;&#xBA85;&#xD558;&#xAE30; &#xC5B4;&#xB824;&#xC6B4; &#xACBD;&#xC6B0;, &#xC601;&#xC0C1;&#xC774;&#xB098; &#xC774;&#xBBF8;&#xC9C0;&#xB85C; &#xBCF4;&#xCDA9;&#xD55C;&#xB2E4;.</p>
+<blockquote>
+<p>&#xC608;&#xC2DC;)<br><a href="https://youtube.com" target="_blank">&#xC790;&#xB8CC;&#xAD6C;&#xC870; &#xC124;&#xBA85; &#xC601;&#xC0C1;</a></p>
+<p>&#xC608;&#xC2DC;)<br><img src="assets/style_guide/krafton-jungle.png" alt="&#xC790;&#xB8CC;&#xAD6C;&#xC870; &#xB2E4;&#xC774;&#xC5B4;&#xADF8;&#xB7A8;"></p>
+</blockquote>
+<h1 id="&#xBB38;&#xC81C;-&#xD480;&#xC5B4;&#xBCF4;&#xAE30;">&#xBB38;&#xC81C; &#xD480;&#xC5B4;&#xBCF4;&#xAE30;</h1>
+<ol>
+<li>&#xB808;&#xB4DC; &#xBE14;&#xB799; &#xD2B8;&#xB9AC;&#xC758; &#xD2B9;&#xC131; 5&#xAC00;&#xC9C0;&#xB97C; &#xC801;&#xC73C;&#xC2DC;&#xC624;.</li>
+<li>extra &#xBE14;&#xB799;&#xC740; &#xC5B4;&#xB5A4; &#xADDC;&#xCE59;&#xC744; &#xC704;&#xBC18; &#xD558;&#xC600;&#xC744; &#xB54C; &#xBC1C;&#xC0DD;&#xD558;&#xB294;&#xAC00;?</li>
+</ol>
+<h1 id="&#xCC38;&#xACE0;">&#xCC38;&#xACE0;</h1>
+<p>&#xCC38;&#xACE0;&#xD55C; &#xC790;&#xB8CC;</p>
+<p>GeeksforGeeks&#xC758; Red-Black Tree</p>
+<p>&#xC774;&#xBBF8;&#xC9C0; &#xCD9C;&#xCC98;</p>
+<p>&#xD06C;&#xB798;&#xD504;&#xD1A4; &#xC815;&#xAE00; &#xC774;&#xBBF8;&#xC9C0;</p>
+<p>&#xC678;&#xBD80; &#xC774;&#xBBF8;&#xC9C0; &#xC0AC;&#xC6A9; &#xC2DC; &#xB77C;&#xC774;&#xC120;&#xC2A4; &#xD655;&#xC778; &#xD544;&#xC694;</p>
+<p>&#xCD94;&#xAC00;&#xB85C; &#xCC38;&#xACE0;&#xD558;&#xBA74; &#xC88B;&#xC740; &#xC790;&#xB8CC;</p>
+<p>Visualgo</p>
+<p>GitHub &#xAC80;&#xC0C9;: Red-Black Tree</p>
+<p>&#xC8FC;&#xC758;&#xC0AC;&#xD56D;</p>
+<p>&#xC678;&#xBD80; &#xCF58;&#xD150;&#xCE20;&#xB97C; &#xC778;&#xC6A9;&#xD560; &#xACBD;&#xC6B0;, &#xBC18;&#xB4DC;&#xC2DC; &#xCD9C;&#xCC98;&#xB97C; &#xBA85;&#xC2DC;&#xD558;&#xACE0; &#xB9C1;&#xD06C;&#xB97C; &#xC81C;&#xACF5;&#xD560; &#xAC83;</p>
+<p>&#xC774;&#xBBF8;&#xC9C0;, &#xB3C4;&#xD45C; &#xB4F1;&#xC740; &#xC9C1;&#xC811; &#xC81C;&#xC791;&#xD558;&#xAC70;&#xB098;, &#xB77C;&#xC774;&#xC120;&#xC2A4;&#xAC00; &#xD5C8;&#xC6A9;&#xB41C; &#xC790;&#xB8CC;&#xB9CC; &#xC0AC;&#xC6A9;&#xD560; &#xAC83;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"README.md","mtime":"2025-06-03T02:05:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-06-03T02:05:54.562Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
