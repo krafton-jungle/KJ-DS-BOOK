@@ -48,28 +48,39 @@ apple, april, bus, busy, beer, best
 * 중복되는 접두사는 노드를 공유함으로써 메모리를 절약한다.
 
 ## 3. 구현 방법
+구현은 Node 및 Trie 클래스로 나뉜다.
 
-### Python 예제 (클래스 기반)
+Node 클래스는 자식 노드들을 담을 dict, 마지막 여부를 확인 할 boolean is_end를 가진다
+
+### Node 클래스
 
 ```python
-class TrieNode:
+class Node:
     def __init__(self):
-        self.children = {}
-        self.is_end = False
+        self.children = {} #자식 노드 저장하는 딕셔너리
+        self.is_end = False # 단어의 끝 표시
+```
 
+---
+
+### Trie 클래스
+Trie 클래스는 root 노드를 필드로 갖는다
+또한, 생성할 때 Root에 새 Node 객체를 만들어준다
+
+```python
 class Trie:
     def __init__(self):
-        self.root = TrieNode()
+        self.root = Node() # 루트 노드 초기홧
 
-    def insert(self, word):  # 삽입 (insert)
+    def insert(self, word):  # 삽입 
         node = self.root
         for char in word:
             if char not in node.children:
-                node.children[char] = TrieNode()
+                node.children[char] = Node()
             node = node.children[char]
         node.is_end = True
 
-    def search(self, word):  # 탐색 (search)
+    def search(self, word):  # 탐색 
         node = self.root
         for char in word:
             if char not in node.children:
@@ -77,13 +88,14 @@ class Trie:
             node = node.children[char]
         return node.is_end
 
-    def starts_with(self, prefix):  # 접두사 검사 (startsWith)
+    def starts_with(self, prefix):  # 접두사 검사 
         node = self.root
         for char in prefix:
             if char not in node.children:
                 return False
             node = node.children[char]
         return True
+
 ```
 
 ### 테스트 코드
@@ -112,6 +124,18 @@ assert trie.starts_with("dog") == False
 * 모든 문자에 대해 노드를 생성하므로 메모리 사용량이 크다.
 * 유니코드, 대소문자 구분 등 복잡한 문자 체계에 대해 구현 부담이 존재한다.
 
+### 해시테이블 vs 트라이
+- 장점
+    - 트라이에서는 키 충돌 일어나지 않음
+    - 모든 항목이 키에 따라 사전순 정렬
+    - 해시 함수 사용x
+    - 최악의 경우에도 안정적인 시간 복잡도
+        - 탐색 시간 문자열 길이 L에 비례하여 $O(L)$
+        - 반면, 해시 테이블은 평균 $O(1)$이나 충돌이 많으면 최악의 경우 $O(N)$
+
+- 단점
+    - 조회는 해시테이블보다 느리다
+    - 불필요한 메모리 낭비
 ## 5. 시간복잡도 분석
 
 | 연산          | 시간복잡도  |
@@ -133,3 +157,5 @@ assert trie.starts_with("dog") == False
 트라이의 기본 구조는 단순하지만 강력하며, 다양한 응용으로 확장 가능하다.
 
 ## 7. 참고
+- GeeksforGeeks: Trie Data Structure (https://www.geeksforgeeks.org/trie-insert-and-search/)
+- Wikipedia: Trie (https://en.wikipedia.org/wiki/Trie)
