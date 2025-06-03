@@ -4,8 +4,7 @@ AVL 트리는 자기 균형 이진 탐색 트리(Binary Search Tree)로,
 어떤 노드에 대해서도 왼쪽 서브트리와 오른쪽 서브트리의 높이 차이가 1을 초과하지 않아야 한다.  
 이 높이 차이를 나타내는 값을 `균형 인수(Balance Factor)`라고 한다.  
 `균형 인수`는 `왼쪽 서브트리의 높이 - 오른쪽 서브트리의 높이`로 정의된다.  
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_01.png)
-  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_01.png)
   
 ---
 ### AVL Tree의 시간 복잡도
@@ -28,7 +27,7 @@ AVL 트리의 높이는 `O(log n)`으로 제한되므로, 모든 연산이 `O(lo
 ### AVL Tree & BST 의 차이
 
 모든 `AVL 트리는 이진 탐색 트리(BST)`이지만, `모든 BST가 AVL 트리는 아니다.`
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_02.png)
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_02.png)  
 
 
 AVL 트리는 BST의 기본 조건(왼쪽 < 루트 < 오른쪽)을 만족하며,  
@@ -46,7 +45,7 @@ AVL 트리는 왼쪽 서브트리에는 더 작은 값, 오른쪽 서브트리�
 
 ### AVL Tree는 중복 값을 허용하지 않는가?
 중복 값을 허용한다고 가정하고 AVL Tree에 그대로 삽입해 보면 다음과 같은 형태된다.  
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_03.png)
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_03.png)  
 
 
 이 구조는 사실상 **한쪽으로 치우친 연결 리스트**와 다를 바 없으며, **AVL 트리의 균형 조건**이 깨지게 된다.
@@ -69,21 +68,21 @@ AVL 트리는 삽입 또는 삭제 연산 후 트리의 `균형이 깨질 수 �
 
 불균형의 유형에 따라 하나의 회전 또는 두 단계의 회전을 수행하여 균형을 회복한다.
 
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_04.png)  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_04.png)  
 불균형이 발생한 노드 A의 왼쪽 자식 B의 왼쪽 서브트리 쪽에서 높이가 증가하여 불균형이 생긴 경우이다.
 
 1. B를 새로운 서브트리의 루트로 설정한다.
 2. 노드 A의 왼쪽 연결을 해제하고, A를 B의 오른쪽 자식으로 연결한다.
 3. 노드 B가 원래 A가 차지하던 위치로 올라간다.
 
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_05.png)  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_05.png)  
 불균형이 발생한 노드 A의 오른쪽 자식 B의 오른쪽 서브트리 쪽에서 높이가 증가하여 불균형이 생긴 경우이다.
 
 1. B를 새로운 서브트리의 루트로 설정한다.
 2. 노드 A의 오른쪽 연결을 해제하고, A를 B의 왼쪽 자식으로 연결한다.
 3. 노드 B가 원래 A가 차지하던 위치로 올라간다.
 
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_06.png)  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_06.png)  
 불균형이 발생한 노드 A의 왼쪽 자식 B의 오른쪽 서브트리 쪽에서 높이가 증가하여 불균형이 생긴 경우이다.
 
 ### 🔸 1단계: B 기준 **Left Rotation**
@@ -92,7 +91,7 @@ B는 루트에서 아래로 내려가고, C가 B의 왼쪽 자식이 된다.
 
 ### 🔸 2단계: C 기준 → **LL Case (Right Rotation)**
 
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_07.png)  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_07.png)  
 불균형이 발생한 노드 A의 오른쪽 자식 B의 왼쪽 서브트리 쪽에서 높이가 증가하여 불균형이 생긴 경우이다.
 
 ### 🔸 1단계: B 기준 **Right Rotation**
@@ -112,8 +111,9 @@ B는 루트에서 아래로 내려가고, C가 B의 오른쪽 자식이 된다.
 3. 반대로 삽입할 값이 현재 노드의 값보다 크면 오른쪽 서브트리로 이동한다.
     - 오른쪽 자식 노드가 없으면, 그 위치에 새 노드를 삽입한다.
 4. 삽입이 완료된 후에는 트리의 균형을 유지하기 위해 필요한 회전 연산을 수행한다.
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_08.png)
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_09.png)
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_08.png)  
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_09.png)  
+
   
   
 ---
@@ -141,7 +141,7 @@ B는 루트에서 아래로 내려가고, C가 B의 오른쪽 자식이 된다.
     
     > 후속자는 조상 중에서 현재 노드보다 큰 값을 처음 만나는 노드이다.  
 
-![AVL_Tree_Image](./AVL_Tree_Image/AVL_Tree_10.png)
+![AVL_Tree_Image](./assets/ch13_ch13_balanced_binary_search_tree/avl_tree/AVL_Tree_10.png)
 
 ---
 
@@ -160,134 +160,117 @@ B는 루트에서 아래로 내려가고, C가 B의 오른쪽 자식이 된다.
 ### 코드
 
 ```c
-// C program to implement the avl tree
+// AVL_Tree를 구현한 C 언어 프로그램
 #include <stdio.h>
 #include <stdlib.h>
 
-// AVL Tree node
-struct Node {
+// AVL 노드 구조체
+struct AvlNode {
     int key;
-    struct Node* left;
-    struct Node* right;
+    struct AvlNode* left;
+    struct AvlNode* right;
     int height;
 };
 
-// Function to get height of the node
-int getHeight(struct Node* n)
-{
-    if (n == NULL)
+// 노드의 높이 반환
+int get_height(struct AvlNode* node) {
+    if (node == NULL)
         return 0;
-    return n->height;
+    return node->height;
 }
 
-// Function to create a new node
-struct Node* createNode(int key)
-{
-    struct Node* node
-        = (struct Node*)malloc(sizeof(struct Node));
-    node->key = key;
-    node->left = NULL;
-    node->right = NULL;
-    node->height = 1; // New node is initially added at leaf
-    return node;
+// 새 노드 생성
+struct AvlNode* create_node(int key) {
+    struct AvlNode* new_node = (struct AvlNode*)malloc(sizeof(struct AvlNode));
+    new_node->key = key;
+    new_node->left = NULL;
+    new_node->right = NULL;
+    new_node->height = 1; // 새 노드는 리프에 추가됨
+    return new_node;
 }
 
-// Utility function to get the maximum of two integers
-int max(int a, int b)
-{
+// 두 정수 중 큰 값 반환
+int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-// Right rotate subtree rooted with y
-struct Node* rightRotate(struct Node* y)
-{
-    struct Node* x = y->left;
-    struct Node* T2 = x->right;
+// 오른쪽 회전
+struct AvlNode* rotate_right(struct AvlNode* unbalanced_node) {
+    struct AvlNode* new_root = unbalanced_node->left;
+    struct AvlNode* moved_subtree = new_root->right;
 
-    // Perform rotation
-    x->right = y;
-    y->left = T2;
+    new_root->right = unbalanced_node;
+    unbalanced_node->left = moved_subtree;
 
-    // Update heights
-    y->height = max(getHeight(y->left), getHeight(y->right)) + 1;
-    x->height = max(getHeight(x->left), getHeight(x->right)) + 1;
+    unbalanced_node->height = max(get_height(unbalanced_node->left), get_height(unbalanced_node->right)) + 1;
+    new_root->height = max(get_height(new_root->left), get_height(new_root->right)) + 1;
 
-    // Return new root
-    return x;
+    return new_root;
 }
 
-// Left rotate subtree rooted with x
-struct Node* leftRotate(struct Node* x)
-{
-    struct Node* y = x->right;
-    struct Node* T2 = y->left;
+// 왼쪽 회전
+struct AvlNode* rotate_left(struct AvlNode* unbalanced_node) {
+    struct AvlNode* new_root = unbalanced_node->right;
+    struct AvlNode* moved_subtree = new_root->left;
 
-    // Perform rotation
-    y->left = x;
-    x->right = T2;
+    new_root->left = unbalanced_node;
+    unbalanced_node->right = moved_subtree;
 
-    // Update heights
-    x->height = max(getHeight(x->left), getHeight(x->right)) + 1;
-    y->height = max(getHeight(y->left), getHeight(y->right)) + 1;
+    unbalanced_node->height = max(get_height(unbalanced_node->left), get_height(unbalanced_node->right)) + 1;
+    new_root->height = max(get_height(new_root->left), get_height(new_root->right)) + 1;
 
-    // Return new root
-    return y;
+    return new_root;
 }
 
-// Get balance factor of node n
-int getBalance(struct Node* n)
-{
-    if (n == NULL)
-        return 0;
-    return getHeight(n->left) - getHeight(n->right);
-}
-
-// Insert a key in the subtree rooted with node and returns new root of subtree
-struct Node* insertNode(struct Node* node, int key)
-{
-    // 1. Perform the normal BST insertion
+// 균형 계수 계산
+int get_balance_factor(struct AvlNode* node) {
     if (node == NULL)
-        return createNode(key);
+        return 0;
+    return get_height(node->left) - get_height(node->right);
+}
 
-    if (key < node->key)
-        node->left = insertNode(node->left, key);
-    else if (key > node->key)
-        node->right = insertNode(node->right, key);
-    else // Equal keys are not allowed in AVL tree
-        return node;
+// 노드 삽입
+struct AvlNode* insert_node(struct AvlNode* root, int key) {
+    // 일반 이진 탐색 트리 삽입
+    if (root == NULL)
+        return create_node(key);
 
-    // 2. Update height of this ancestor node
-    node->height = 1 + max(getHeight(node->left), getHeight(node->right));
+    if (key < root->key)
+        root->left = insert_node(root->left, key);
+    else if (key > root->key)
+        root->right = insert_node(root->right, key);
+    else
+        return root; // 중복 키는 허용하지 않음
 
-    // 3. Get the balance factor to check whether this node became unbalanced
-    int balance = getBalance(node);
+    // 높이 갱신
+    root->height = 1 + max(get_height(root->left), get_height(root->right));
 
-    // If node is unbalanced, then try the 4 cases
+    // 균형 계수 확인
+    int balance_factor = get_balance_factor(root);
 
-    // Left Left Case
-    if (balance > 1 && key < node->left->key)
-        return rightRotate(node);
+    // 네 가지 경우 처리
 
-    // Right Right Case
-    if (balance < -1 && key > node->right->key)
-        return leftRotate(node);
+    // LL (Left Left)
+    if (balance_factor > 1 && key < root->left->key)
+        return rotate_right(root);
 
-    // Left Right Case
-    if (balance > 1 && key > node->left->key) {
-        node->left = leftRotate(node->left);
-        return rightRotate(node);
+    // RR (Right Right)
+    if (balance_factor < -1 && key > root->right->key)
+        return rotate_left(root);
+
+    // LR (Left Right)
+    if (balance_factor > 1 && key > root->left->key) {
+        root->left = rotate_left(root->left);
+        return rotate_right(root);
     }
 
-    // Right Left Case
-    if (balance < -1 && key < node->right->key) {
-        node->right = rightRotate(node->right);
-        return leftRotate(node);
+    // RL (Right Left)
+    if (balance_factor < -1 && key < root->right->key) {
+        root->right = rotate_right(root->right);
+        return rotate_left(root);
     }
 
-    // Return the unchanged node pointer
-    return node;
-
-
+    return root; // 변경 없는 경우
 }
 
 ```
