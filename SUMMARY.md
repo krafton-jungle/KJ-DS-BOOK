@@ -1,6 +1,0 @@
-- [Hash Table](docs/ch9_hash_table/README.md)
-    - [Hash 함수](docs/ch9_hash_table/what_hash.md)
-    - [Hash Table(map)](docs/ch9_hash_table/hash_table.md)
-    - [Hash 충돌](docs/ch9_hash_table/hash_collision.md)
-        - [Open Addressing](docs/ch9_hash_table/open_addressing.md)
-        - [Chaining](docs/ch9_hash_table/chaining.md)
