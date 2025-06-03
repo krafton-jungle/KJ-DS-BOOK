@@ -6,7 +6,7 @@
   - 팝 연산을 수행하면, 루트 노드의 최댓값이 제거되어 반환된다.
 - 새로운 원소가 푸시, 팝될 때마다 힙 조건을 만족할 수 있도록 노드의 위치가 자동으로 조정된다.
 
-![alt text](image-4.png)
+![alt text](assets/maxheap-1.png)
 
 - 위 트리는 최대 힙의 예시이다.
 - 루트 노드에 최댓값인 `9`가 위치한다.
@@ -26,22 +26,22 @@
 
 ### 예제
 
-![alt text](image.png)
+![alt text](assets/maxheap-2.png)
 
 - 위 예제에서는 현재 힙에 `13`을 삽입한다.
 
-![alt text](image-15.png)
+![alt text](assets/maxheap-3.png)
 
 - `13`이 부모 `5`보다 크므로, 둘의 위치를 바꾼다.
 
-![alt text](image-16.png)
+![alt text](assets/maxheap-4.png)
 
 - `13`이 부모 `11`보다 크므로, 둘의 위치를 바꾼다.
 - 이후 `13`이 루트에 도달했으므로, 종료한다.
 
 ### 시간 복잡도
 
-![alt text](image-3.png)
+![alt text](assets/maxheap-5.png)
 
 - **힙의 높이만큼의 간선**을 따라 부모 노드와 비교 연산을 하며 위로 올라갈 수 있다.
 - 원소 수를 $N$으로 둘 때, 힙(완전 이진 트리)의 높이는 $\lfloor{\log_2N}\rfloor$이다.
@@ -60,15 +60,15 @@
 
 ### 예제
 
-![alt text](image-5.png)
+![alt text](assets/maxheap-6.png)
 
 - 위 예제의 힙에서 팝 연산을 수행하려고 한다. 루트 노드 `13`과, 마지막 노드 `5`의 위치를 변경한다.
 
-![alt text](image-6.png)
+![alt text](assets/maxheap-7.png)
 
 - `13`을 힙에서 제거하고 반환한다. 삽입된 값 중 `13`이 최댓값이었다는 점에 유의한다.
 
-![alt text](image-7.png)
+![alt text](assets/maxheap-8.png)
 
 - 새로운 루트 노드 `5`를 내려 보낸다.
 - `5`보다 자식 `11`이 크므로, `11`과 위치를 바꾼다.
@@ -77,7 +77,7 @@
 
 ### 시간 복잡도
 
-![alt text](image-8.png)
+![alt text](assets/maxheap-9.png)
 
 - **힙의 높이만큼의 간선**을 따라 자식 노드와 값 비교 연산을 하며 아래로 내려갈 수 있다.
 - 원소 수를 $N$으로 둘 때, 힙(완전 이진 트리)의 높이는 $\lfloor{\log_2N}\rfloor$이다.
@@ -98,11 +98,11 @@
 
 ### 예제
 
-![alt text](image-9.png)
+![alt text](assets/maxheap-10.png)
 
 - 위 예제에선 배열 `[3, 5, 11, 2, 7, 13]`을 최대 힙으로 구성한다.
 
-![alt text](image-11.png)
+![alt text](assets/maxheap-11.png)
 
 - `13`, `7`, `2`은 리프 노드이므로 내려보낼 필요가 없다.
 - `11`보다 자식 `13`이 크므로, 위치를 바꿔서 내려보낸다.
@@ -110,7 +110,7 @@
 - `5`보다 자식 `7`이 크므로, 위치를 바꿔서 내려보낸다.
   - 이후 리프에 도달했으니 멈춘다.
 
-![alt text](image-12.png)
+![alt text](assets/maxheap-12.png)
 
 - `3`보다 자식 `13`이 크므로 위치를 바꾸고, 이후 새 위치에서 `3`보다 자식 `11`이 크므로 다시 위치를 바꾼다.
   - 이후 리프에 도달했으니 멈춘다.
@@ -118,7 +118,7 @@
 
 ### 시간 복잡도
 
-![alt text](image-13.png)
+![alt text](assets/maxheap-13.png)
 
 - 원소 수를 $N$으로 둘 때, 모든 노드를 한 번씩 처리하므로, $O(N \log N)$의 시간 복잡도가 걸릴 것이라고 착각하기 쉽다.
 - 하지만 트리 하단의 노드는 이동 경로가 짧아, 상대적으로 적은 연산이 필요하다.
@@ -133,7 +133,7 @@
 - 파이썬의 `heapq` 모듈은 기본적으로 최소 힙을 기반으로 동작한다.
 - 하지만 **푸시, 팝하는 과정에서 값의 부호를 반전**하면, 최대 힙처럼 사용할 수 있다.
 
-![alt text](image-14.png)
+![alt text](assets/maxheap-14.png)
 
 ## 푸시 연산
 
