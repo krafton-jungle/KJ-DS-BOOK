@@ -1,4 +1,4 @@
-- [챕터 8](/)
-  - [챕터 8 첫 주제](page1.md)
-  - [챕터 8 두번째 주제](page2.md)
-  - [챕터 8 세번재 주세](page3.md)
+- [Priority Queue](/)
+  - [Min Heap](page1.md)
+  - [Max Heap](page2.md)
+  - [Priority Queue](page3.md)
