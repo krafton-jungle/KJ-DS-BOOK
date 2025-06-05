@@ -21,8 +21,8 @@
 
 ## 코드 예시 (Python)
 - 단일 연결 리스트(singly linked list) 기반의 스택
-![단일 연결 리스트 기반 스택](singly-linked-list-01.png)
-![단일 연결 리스트 기반 스택](singly-linked-list-02.png)
+![단일 연결 리스트 기반 스택](linked_stack_img/singly-linked-list-01.png)
+![단일 연결 리스트 기반 스택](linked_stack_img/singly-linked-list-02.png)
 ```python
 class Node:
     def __init__(self, data):
@@ -64,7 +64,7 @@ class SinglyLinkedStack:
 
 - 이중 연결 리스트(Doubly Linked List) 기반의 스택
 
-![단일 연결 리스트 기반 스택](doubly-linked-list.png)
+![단일 연결 리스트 기반 스택](linked_stack_img/doubly-linked-list.png)
 ```python
 class Node:
     def __init__(self, data):
