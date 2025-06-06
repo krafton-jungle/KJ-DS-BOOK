@@ -1,5 +1,6 @@
 # Linked Queue
 
+---
 ### 목차
 
 - [Linked Queue란?](#Linke-Queue란?)
@@ -10,14 +11,15 @@
     - [양방향 리스트를 활용한 큐](#양방향-리스트를-활용한-큐)
     - [양방향 리스트를 활용한 덱 구현](#양방향-리스트를-활용한-덱-구현)
 - [마무리](#마무리)
-
+---
 ## Linked Queue란?
 
 링크드 큐는 연결 리스트를 기반으로 큐의 기능을 구현한 자료구조이다. 처음 접하면 다소 생소하게 느껴질 수 있으나, 연결 리스트의 특성을 활용하여 효율적인 큐 연산이 가능하다.
 
+---
 ## Queue
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image.png)
+![큐 구조.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image.png)
 
 - 큐(Queue)는 먼저 들어온 데이터가 먼저 나가는(FIFO, First In First Out) 구조의 자료구조다. 마치 줄을 서서 기다리는 상황처럼, 먼저 들어온 데이터가 먼저 처리된다.
 - **Front**: 데이터를 꺼내는 쪽 (가장 오래된 데이터가 있는 곳)
@@ -26,19 +28,19 @@
 
 ## Linked List
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%201.png)
+![링크드 리스트 구조.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%201.png)
 
 - 각 노드가 데이터를 담고, 다음 노드를 가리키는 포인터를 가지는 자료 구조이다.
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%202.png)
+![링크드 리스트 예시.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%202.png)
 
 append() 메소드를 통해 데이터를 추가 한다고 하면 다음과 그림과 같을 것이다.
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%203.png)
+![링크드 리스트 추가기능 예시.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%203.png)
 
 popleft() 메소드를 통해 선입되었던 데이터를 삭제한다고 한다면 다음과 그림과 같을 것이다.
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%204.png)
+![링크드 리스트 삭제기능 예시.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%204.png)
 
 ---
 ### 링크드 리스트를 활용한 큐 구현
@@ -146,6 +148,7 @@ int main() {
 - 큐(Queue)**에서 `dequeue()` 시 `head` 포인터가 이동하지만, 마지막 노드를 제거했을 경우에는 `tail`도 `None`으로 설정해야한다.
 - 이를 생략하면 tail이 이미 제거된 노드를 가리키는 잘못된 상태가 되어, 이후 enqueue 시 오류가 발생한다.
 
+---
 ## Deque
 
 - Deque는 양쪽에서 삽입과 삭제가 가능한 자료구조이다.
@@ -154,9 +157,9 @@ int main() {
 - insert_front()는 head 앞에 새 노드를 추가하고, insert_rear()는 tail 뒤에 새 노드를 추가한다.
 - 삭제 연산은 해당 위치의 노드를 제거한 후 포인터를 적절히 갱신하여 구조를 유지한다.
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%205.png)
+![양방향 리스트 구조1.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%205.png)
 
-![image.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%206.png)
+![양방향 리스트 구조2.png](Linked%20Queue%20206b3875796480558d42e9d3e2b43042/image%206.png)
 
 Deque를 구현하려면 front와 rear 두 포인터를 추적해야 한다.
 
