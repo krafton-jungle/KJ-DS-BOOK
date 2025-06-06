@@ -111,14 +111,10 @@ class DoublyLinkedStack:
 ```
 
 
-## 영상첨부설정
-
-
 ## 참고
 - 참고한 자료
-  - https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/
-  - https://www.geeksforgeeks.org/implementation-of-stack-using-doubly-linked-list/
+  - [GeeksforGeeks의 Stack Implementation using Singly Linked List](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
+  - [GeeksforGeeks의 Stack Implementation using Doubly Linked List](https://www.geeksforgeeks.org/implementation-of-stack-using-doubly-linked-list/)
 - 이미지 출처
   - https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/
   - https://www.geeksforgeeks.org/implementation-of-stack-using-doubly-linked-list/
-- 추가로 참고하면 좋은 자료
