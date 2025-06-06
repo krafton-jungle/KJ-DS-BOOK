@@ -1,4 +1,0 @@
-- [Priority Queue](/)
-  - [Min Heap](page1.md)
-  - [Max Heap](page2.md)
-  - [Priority Queue](page3.md)
