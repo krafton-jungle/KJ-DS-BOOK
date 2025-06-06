@@ -158,3 +158,4 @@ bst.inorder(bst.root)  # 출력: 20 30 40 50 60 70 80
 * GeeksforGeeks: [Introduction to Tree Data Structure](https://www.geeksforgeeks.org/introduction-to-tree-data-structure/)
 * GeeksforGeeks: [Types of Trees in Data Structures](https://www.geeksforgeeks.org/types-of-trees-in-data-structures/)
 * GeeksforGeeks: [Applications of Tree Data Structure](https://www.geeksforgeeks.org/applications-of-tree-data-structure/)
+
