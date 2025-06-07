@@ -33,8 +33,8 @@
 
 선형 큐는 앞서 설명한 것처럼 공간 낭비 문제가 발생한다. 이는 배열에 실제로는 빈 공간이 있음에도 불구하고 rear 포인터가 배열의 끝에 도달했을 때 더 이상 삽입할 수 없는 상황을 의미한다.
 
-![legend.png](https://velog.velcdn.com/images/plan6062/post/319f248c-2d3d-4ec6-9df3-a99542940bfa/image.png)
-![Linear_queue_space_waste.png](https://velog.velcdn.com/images/plan6062/post/cf3b93b1-f239-43e6-98fe-4622c70df1e8/image.png)
+![legend.png](/assets/ch5_queue/circular_queue/legend.png)
+![Linear_queue_space_waste.png](/assets/ch5_queue/circular_queue/Linear_queue_space_waste.png)
 
 
 
@@ -42,7 +42,7 @@
 
 원형 큐는 **모듈로 연산(Modulo Operation), `(index + 1) % maxSize)`** 을 사용하여 이 문제를 해결한다. 배열의 크기를 n이라 할 때, 포인터가 n-1을 넘어가면 다시 0부터 시작하도록 하여 순환 구조를 구현한다. 이를 통해 rear 포인터가 배열의 끝에 도달해도 앞부분에 빈 공간이 있다면 계속해서 삽입 연산을 수행할 수 있다.
 
-![Circular_queue.png](https://velog.velcdn.com/images/plan6062/post/8030ac13-994c-4d45-8526-260b66a2c110/image.png)
+![Circular_queue.png](/assets/ch5_queue/circular_queue/Circular_queue.png)
 
 
 
@@ -66,7 +66,7 @@
 **공백 조건**: `front == rear`
 **포화 조건**: `(rear + 1) % maxSize == front`
 
-![Empty_slot_method.png](https://velog.velcdn.com/images/plan6062/post/d9a4eefd-f7e6-445b-b6ae-09d49129e219/image.png)
+![Empty_slot_method.png](/assets/ch5_queue/circular_queue/Empty_slot_method.png)
 
 
 이 방식은 구현이 간단하고 직관적이지만, 배열의 한 칸을 사용하지 못하므로 공간 효율성이 약간 떨어진다.
@@ -78,7 +78,7 @@
 **공백 조건**: `count == 0`
 **포화 조건**: `count == maxSize`
 
-![Counter_variable_method.png](https://velog.velcdn.com/images/plan6062/post/7260333e-5f78-4b06-b426-12673f35decf/image.png)
+![Counter_variable_method.png](/assets/ch5_queue/circular_queue/Counter_variable_method.png)
 
 
 이 방식은 배열의 모든 공간을 활용할 수 있고 현재 큐의 크기를 즉시 알 수 있지만, 추가적인 변수가 필요하고 모든 연산에서 카운터를 갱신해야 한다.
@@ -92,7 +92,7 @@
 
 이 방식은 추가 공간을 최소화하면서 모든 배열 공간을 활용할 수 있지만, 플래그 관리가 복잡하다.
 
-![Flag_bit_method.png](https://velog.velcdn.com/images/plan6062/post/cd204382-31bf-4919-a23a-017e9572858f/image.png)
+![Flag_bit_method.png](/assets/ch5_queue/circular_queue/Flag_bit_method.png)
 
 
 ## 방식별 비교
@@ -116,19 +116,21 @@
 2. `rear = (rear + 1) % maxSize`로 이동
 3. 새로운 원소를 rear 위치에 저장
 
-![Circular_queue_insertion.png](https://velog.velcdn.com/images/plan6062/post/d835ec62-df96-4e29-9e4f-4ed6c788b2c3/image.png)
+![Circular_queue_insertion.png](/assets/ch5_queue/circular_queue/Circular_queue_insertion.png)
 
 
 
-
-```
-enqueue(item):
-    if isFull():
-        error "Queue is full"
-    else:
-        rear = (rear + 1) % maxSize
-        queue[rear] = item
+```c
+// enqueue 함수 - 큐에 원소 삽입 (C언어)
+void enqueue(int item) {
+    if (isFull()) {
+        printf("Error: Queue is full\n");  // 에러: 큐가 가득 참
+    } else {
+        rear = (rear + 1) % maxSize;
+        queue[rear] = item;
         // 크기 정보 갱신 (방식에 따라)
+    }
+}
 ```
 
 ## 삭제 연산 (dequeue)
@@ -140,22 +142,24 @@ enqueue(item):
 2. `front = (front + 1) % maxSize`로 이동
 3. front 위치의 원소 반환
 
-![Circular_queue_deletion.png](https://velog.velcdn.com/images/plan6062/post/45cc9ebe-01b2-4669-86a3-aeb3b045eaf4/image.png)
+![Circular_queue_deletion.png](/assets/ch5_queue/circular_queue/Circular_queue_deletion.png)
 
 
 
-
-```
-dequeue():
-    if isEmpty():
-        error "Queue is empty"
-    else:
-        front = (front + 1) % maxSize
-        item = queue[front]
+```c
+// dequeue 함수 - 큐에서 원소 제거 (C언어)
+int dequeue() {
+    if (isEmpty()) {
+        printf("Error: Queue is empty\n");  // 에러: 큐가 비어있음
+        return -1;  // 에러 값 반환
+    } else {
+        front = (front + 1) % maxSize;
+        int item = queue[front];
         // 크기 정보 갱신 (방식에 따라)
-        return item
+        return item;
+    }
+}
 ```
-
 
 
 # 원형 큐의 구현
