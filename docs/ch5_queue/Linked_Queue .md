@@ -19,7 +19,7 @@
 ---
 ## Queue
 
-![큐 구조.png](/assets/큐구조.png)
+![큐 구조.png](/assets/ch5_queue/linked_queue/큐구조.png)
 
 - 큐(Queue)는 먼저 들어온 데이터가 먼저 나가는(FIFO, First In First Out) 구조의 자료구조다. 마치 줄을 서서 기다리는 상황처럼, 먼저 들어온 데이터가 먼저 처리된다.
 - **Front**: 데이터를 꺼내는 쪽 (가장 오래된 데이터가 있는 곳)
@@ -28,19 +28,19 @@
 
 ## Linked List
 
-![링크드리스트구조.png](/assets/링크드리스트구조.png)
+![링크드리스트구조.png](/assets/ch5_queue/linked_queue/링크드리스트구조.png)
 
 - 각 노드가 데이터를 담고, 다음 노드를 가리키는 포인터를 가지는 자료 구조이다.
 
-![링크드리스트예시.png](/assets/링크드리스트예시.png)
+![링크드리스트예시.png](/assets/ch5_queue/linked_queue/링크드리스트예시.png)
 
 append() 메소드를 통해 데이터를 추가 한다고 하면 다음과 그림과 같을 것이다.
 
-![링크드리스트추가기능예시.png](/assets/링크드리스트추가기능예시.png)
+![링크드리스트추가기능예시.png](/assets/ch5_queue/linked_queue/링크드리스트추가기능예시.png)
 
 popleft() 메소드를 통해 선입되었던 데이터를 삭제한다고 한다면 다음과 그림과 같을 것이다.
 
-![링크드리스트삭제기능예시.png](/assets/링크드리스트삭제기능예시.png)
+![링크드리스트삭제기능예시.png](/assets/ch5_queue/linked_queue/링크드리스트삭제기능예시.png)
 
 ---
 ### 링크드 리스트를 활용한 큐 구현
@@ -157,9 +157,9 @@ int main() {
 - insert_front()는 head 앞에 새 노드를 추가하고, insert_rear()는 tail 뒤에 새 노드를 추가한다.
 - 삭제 연산은 해당 위치의 노드를 제거한 후 포인터를 적절히 갱신하여 구조를 유지한다.
 
-![양방향리스트구조1.png](/assets/양방향리스트구조1.png)
+![양방향리스트구조1.png](/assets/ch5_queue/linked_queue/양방향리스트구조1.png)
 
-![양방향리스트구조2.png](/assets/양방향리스트구조2.png)
+![양방향리스트구조2.png](/assets/ch5_queue/linked_queue/양방향리스트구조2.png)
 
 Deque를 구현하려면 front와 rear 두 포인터를 추적해야 한다.
 
