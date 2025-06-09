@@ -2,17 +2,17 @@
 
 덱, Deque는 Double Ended Queue의 줄임말이다. 
 
-덱은 데이터 값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
+덱은 데이터값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
 
 ![image.png](attachment:08e8a395-58ff-4f04-9379-3549295e7bd7:image.png)
 
-덱은 큐의 전단(front)와 후단(rear)에서 모두 삽입과 삭제가 가능한 큐를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다, 
+덱은 큐의 전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다, 
 
-단순히 값을 삽입하고 삭제하는 용도로만 활용할때는 O(1)만큼의 시간밖에 할애되지 않기 때문에 아주 효율적이다 . 
+단순히 값을 삽입하고 삭제하는 용도로만 활용할 때는 `O(1)`만큼의 시간밖에 할애되지 않기 때문에 아주 효율적이다 . 
 
 덱은 후단만 사용하면 스택이 되고, 후단에서 삽입과 전단에서 삭제 연산을 수행하면 큐가 된다.
 
-덱은 원형 큐 (Circle Queue)를 확장하면 손쉽게 구현할 수 있다 → 원형 큐에서 플러스로 전단(front)에서의 삽입과 후단(rear)에서의 삭제만 추가되면 덱을 구현할 수 있기 때문이다. 
+덱은 원형 큐 (Circle Queue)를 확장하면 손쉽게 구현할 수 있다. → 원형 큐에서 플러스로 전단(front)에서의 삽입과 후단(rear)에서 삭제만 추가되면 덱을 구현할 수 있기 때문이다. 
 
 ## create()
 
@@ -27,8 +27,8 @@ void init_deque(DequeType * q)
 
 ## init_deque
 
-- 덱을 초기화 한다
-- front 와 rear을 둘다 0으로 초기화한다
+- 덱을 초기화한다.
+- front와 rear을 둘 다 0으로 초기화한다.
 
 ```c
 void init_deque(DequeType * q)
@@ -52,7 +52,7 @@ int is_empty(DequeType * q)
 ## is_full
 
 - 덱의 포화 상태를 검사한다
-- 앞에서 front == rear일때를 공백 상태로 보기로 했었기 때문에 한 칸을 비우지 않은 상태로 덱을 꽉 채ㅜ운다면 front == rear 인 상태가 되고 곧, 큐가 공백 상태인지 포화 상태인지를 구별할 수 없다. 배열을 한칸 비움으로써 공백과 포화 상태를 구분한다.
+- 앞에서 `front == rear` 일 때를 공백 상태로 보기로 했었기 때문에 한 칸을 비우지 않은 상태로 덱을 꽉 채운다면 `front == rear` 인 상태가 되고 곧, 큐가 공백 상태인지 포화 상태인지를 구별할 수 없다. 배열을 한 칸 비움으로써 공백과 포화 상태를 구분한다.
 
 ```c
 int is_full(DequeType * q)
@@ -94,7 +94,7 @@ void deque_print(DequeType * q)
 void add_front(DequeType *q, element val)
 {
 	if (is_full(q))
-		error("큐가 포화상태입니다")
+		error("큐가 포화 상태입니다")
 	q -> data[q -> front] = val;
 	q -> front = (q -> front - 1 + MAX_QUEUE_SIZE) % MAX_QUEUE_SIZE;
 }
@@ -103,14 +103,14 @@ void add_front(DequeType *q, element val)
 ## add_rear
 
 - 덱의 뒤에 요소를 추가한다.
-- rear을 증가시킨 후 항목을 삽입한다.
+- rear를 증가시킨 후 항목을 삽입한다.
 - 큐의 enqueue 연산과 동일하다.
 
 ```c
 void add_rear(DequeType *q, element item)
 {
 	if (is_full(q))
-		error("큐가 포화상태입니다")
+		error("큐가 포화 상태입니다")
 	q -> rear = (q -> rear + 1) % MAX_QUEUE_SIZE;
 	q -> data[q -> rear] = item;
 }
@@ -119,7 +119,7 @@ void add_rear(DequeType *q, element item)
 ## delete_front
 
 - 덱의 앞에 있는 요소를 반환한 후 삭제한다.
-- front가 하나 앞을 가르키기 때문에 front를 증가시키고 해당 위치의 값을 반환한다.
+- front가 하나 앞을 가리키기 때문에 front를 증가시키고 해당 위치의 값을 반환한다.
 - 스택의 pop연산과 동일하다
 - 큐의 dequeue 연산과 동일하다
 
@@ -127,7 +127,7 @@ void add_rear(DequeType *q, element item)
 element delete_front(DequeType * q)
 {
 	if (is_empty(q))
-		error("큐가 공백상태입니다");
+		error("큐가 공백 상태입니다");
 	q -> front = (q -> front + 1) % MAX_QUEUE_SIZE;
 	return q -> data[q -> front];
 }
@@ -136,14 +136,14 @@ element delete_front(DequeType * q)
 ## delete_rear
 
 - 덱의 뒤에 있는 요소를 반환한 다음 삭제한다.
-- rear에 해당하는 값을 저장한 후 rear을 감소시키고 이후 저장한 값을 반환한다.
+- rear에 해당하는 값을 저장한 후 rear를 감소시키고 이후 저장한 값을 반환한다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
 ```c
 element delete_rear(DequeType * q)
 {
 		if (is_empt(q))
-			error("큐가 공백상태입니다");
+			error("큐가 공백 상태입니다");
 		return q -> data[(q -> front + 1) % MAX_QUEUE_SIZE ]
 }
 ```
@@ -158,7 +158,7 @@ element delete_rear(DequeType * q)
 element get_front(DequeType * q)
 {
 		if (is_empt(q))
-			error("큐가 공백상태입니다");
+			error("큐가 공백 상태입니다");
 		return q -> data[(q -> front + 1) % MAX_QUEUE_SIZE ]
 }
 ```
@@ -172,7 +172,7 @@ element get_front(DequeType * q)
 element get_rear(DequeType * q)
 {
 		if (is_empt(q))
-			error("큐가 공백상태입니다");
+			error("큐가 공백 상태입니다");
 		return q -> data[q -> rear];
 }
 ```
@@ -197,7 +197,7 @@ int main(void)
 }
 ```
 
-**코드 실행결과** 
+**코드 실행 결과** 
 
 DEQUE(front = 4 rear = 0) = 0 |
 
