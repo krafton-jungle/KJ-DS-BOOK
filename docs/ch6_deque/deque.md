@@ -10,6 +10,8 @@
  <br>
  <sub>덱의 구조</sub>
  </div>
+ 
+<br>
 
 덱은 큐의 **전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐**를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다.
 
@@ -211,8 +213,13 @@ int main(void)
 
 **코드 실행 결과** 
 >DEQUE(front = 4 rear = 0) = 0 |
+
 >DEQUE(front = 3 rear = 0) = 1 | 0 |
+
 >DEQUE(front = 2 rear = 0) = 2 | 1 | 0 |
+
 >DEQUE(front = 2 rear = 4) = 2 | 1 |  
+
 >DEQUE(front = 2 rear = 3) = 2 | 
+
 >DEQUE(front = 2 rear = 2) =
