@@ -43,7 +43,7 @@ _book
 
 # custom delete later
 .nvmrc
-book.json
+
 package-lock.json
 package.json
 test.html
