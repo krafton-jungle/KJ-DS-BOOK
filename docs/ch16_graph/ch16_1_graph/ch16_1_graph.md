@@ -8,7 +8,7 @@
 
 그래프를 이용하여 리스트나 트리로는 표현할 수 없는 복잡한 연결 구조를 명확하게 나타낼 수 있다.
 
-![graph-1](../assets/Ch16_1_graph/graph-1.png)
+![graph-1.png](../assets/ch16_1_graph/graph-1.png)
 
 ## 2. 그래프의 구성
 
@@ -44,7 +44,7 @@
 
 ### 밀도(Density)
 
-![graph-2.png](../assets/Ch16_1_graph/graph-2.png)
+![graph-2.png](../assets/ch16_1_graph/graph-2.png)
 
 그래프에서 말하는 **밀도(Density)**란, 정점들 사이에 현재 존재하는 간선의 수가 이론적으로 가능한 최대 간선 수에 비해 얼마나 많은지를 나타내는 지표를 말한다.
 
@@ -54,7 +54,7 @@
 
 ### 무방향 그래프(Undirected Graph)와 방향 그래프(Directed Graph)
 
-![graph-3.png](../assets/Ch16_1_graph/graph-3.png)
+![graph-3.png](../assets/ch16_1_graph/graph-3.png)
 
 간선에 방향이 없는 경우, 이를 **무방향 그래프(Undirected Graph)**라 한다.
 
@@ -62,7 +62,7 @@
 
 이는 간선 $e$ 에 대해 집합 {$u, v$} 로 나타낼 수 있으며, 집합의 특성상 두 정점의 순서는 중요하지 않다. 즉, {$u, v$} = {$v, u$} 이므로 상호 연결을 나타낸다.
 
-![graph-4.png](../assets/Ch16_1_graph/graph-4.png)
+![graph-4.png](../assets/ch16_1_graph/graph-4.png)
 
 간선에 특정한 방향이 존재하는 경우, 이를 **방향 그래프(Directed Graph)**라 한다.
 
@@ -72,7 +72,7 @@
 
 ### 가중치 그래프(Weighted Graph)
 
-![graph-5.png](../assets/Ch16_1_graph/graph-5.png)
+![graph-5.png](../assets/ch16_1_graph/graph-5.png)
 
 간선에 일정한 **수치적 값**을 부여한 그래프를 **가중치 그래프(Weighted Graph)**라 말한다.
 
@@ -82,7 +82,7 @@
 
 ### 사이클(Cycle)
 
-![graph-6.png](../assets/Ch16_1_graph/graph-6.png)
+![graph-6.png](../assets/ch16_1_graph/graph-6.png)
 
 그래프 내에서 특정한 정점에서 출발하여, 다시 출발한 정점으로 다시 돌아오는 경로가 존재할 경우, 해당 그래프는 **사이클(Cycle)**특성을 가진 그래프라고 한다.
 
