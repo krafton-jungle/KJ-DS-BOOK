@@ -75,10 +75,36 @@ $$ h(k, i) = (h1(k) + i \times h2(k)) mod\, m $$
 
 ### 정리
 
-|  | **선형 탐사법** | **이차 탐사법** | **이중 해싱법** |
-| --- | --- | --- | --- |
-| 탐색 방식 | 순차적으로 다음 공간 탐색 | 제곱수만큼 떨어진 공간 탐색 | 두 번째 해시함수를 이용해 탐색 |
-| 장점 | 구현이 간단하고 직관적 | 1차 군집화 문제 완화 | 군집화 문제를 가장 효과적으로 해결 |
-| 단점 | 1차 군집화 발생 | 2차 군집화 발생, 테이블 크기가 소수가 아니면 저장 불가능 | 두 해시 함수로 인한 계산 비용 증가 |
-| 구현 복잡도 | 낮음 | 중간 | 높음 |
-| 해시 함수 | $$ h(k,i) = (h(k) + i) mod\, m $$ | $$ h(k,i) = (h(k) + i^2) mod\, m $$ | $$ h(k,i) = (h1(k) + i \times h2(k)) mod\, m $$ |
+
+<table style="width: 100%; border-collapse: collapse;" border="1">
+<tr>
+  <td style="width: 20%;"><strong>구분</strong></td>
+  <td style="width: 26%;"><strong>선형 탐사법</strong></td>
+  <td style="width: 27%;"><strong>이차 탐사법</strong></td>
+  <td style="width: 27%;"><strong>이중 해싱법</strong></td>
+</tr>
+<tr>
+  <td><strong>탐색 방식</strong></td>
+  <td>순차적으로 다음 공간 탐색</td>
+  <td>제곱수 간격만큼 탐색</td>
+  <td>두 번째 해시함수를 이용해 탐색</td>
+</tr>
+<tr>
+  <td><strong>장점</strong></td>
+  <td>구현이 간단하고 직관적</td>
+  <td>1차 군집화 문제 완화</td>
+  <td>군집화 문제를 가장 효과적으로 해결</td>
+</tr>
+<tr>
+  <td><strong>단점</strong></td>
+  <td>1차 군집화 발생</td>
+  <td>2차 군집화 발생</td>
+  <td>두 해시 함수로 인한 계산 비용 증가</td>
+</tr>
+<tr>
+  <td><strong>구현 복잡도</strong></td>
+  <td>낮음</td>
+  <td>중간</td>
+  <td>높음</td>
+</tr>
+</table>
