@@ -8,7 +8,7 @@
 
 그래프를 이용하여 리스트나 트리로는 표현할 수 없는 복잡한 연결 구조를 명확하게 나타낼 수 있다.
 
-![graph-1.png](../assets/Ch16_1_graph/graph-1.png)
+![graph-1](../assets/Ch16_1_graph/graph-1.png)
 
 ## 2. 그래프의 구성
 
