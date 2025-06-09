@@ -2,23 +2,20 @@
 
 # 1. 덱 이란? 
 
-덱, Deque는 Double Ended Queue의 줄임말이다. 
-덱은 데이터값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
+덱, **Deque는 Double Ended Queue**의 줄임말이다. 덱은 데이터값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
 
 <div align="center">
- <img src="assets/deque_intro" width="600"/>
+ <img src="assets/deque_intro.png" width="600"/>
  <br>
  <br>
  <sub>덱의 구조</sub>
  </div>
 
-덱은 큐의 전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다, 
+덱은 큐의 **전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐**를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다.
 
 단순히 값을 삽입하고 삭제하는 용도로만 활용할 때는 `O(1)`만큼의 시간밖에 할애되지 않기 때문에 아주 효율적이다. 
 
-덱은 후단만 사용하면 스택이 되고, 후단에서 삽입과 전단에서 삭제 연산을 수행하면 큐가 된다.
-
-덱은 원형 큐 (Circle Queue)를 확장하면 손쉽게 구현할 수 있다. → 원형 큐에서 플러스로 전단(front)에서의 삽입과 후단(rear)에서 삭제만 추가되면 덱을 구현할 수 있기 때문이다. 
+>덱은 후단만 사용하면 스택이 되고, 후단에서 삽입과 전단에서 삭제 연산을 수행하면 큐가 된다. 덱은 원형 큐 (Circle Queue)를 확장하면 손쉽게 구현할 수 있는데, 원형 큐에서 플러스로 전단(front)에서의 삽입과 후단(rear)에서 삭제만 추가되면 덱을 구현할 수 있기 때문이다. 
 
 # 2. 덱의 연산 및 구현 
 
@@ -36,7 +33,7 @@ void init_deque(DequeType * q)
 ## init_deque
 
 - 덱을 초기화한다.
-- front와 rear을 둘 다 0으로 초기화한다.
+- `front`와 `rear`을 둘 다 0으로 초기화한다.
 
 ```c
 void init_deque(DequeType * q)
@@ -48,7 +45,7 @@ void init_deque(DequeType * q)
 ## is_empty
 
 - 덱이 비었는지 검사한다
-- front
+- `front == rear` 이라면 덱이 비어 있다는 것을 의미한다. 
 
 ```c
 int is_empty(DequeType * q)
@@ -89,7 +86,7 @@ void deque_print(DequeType * q)
  	printf("\n");
 }
 ```
-* * *
+<br>
 
 <div align="center">
  <img src="assets/deque_methods.png" width="600"/>
@@ -101,8 +98,8 @@ void deque_print(DequeType * q)
 ## add_front
 
 - 덱의 앞에 요소를 추가한다.
-- front가 하나 앞을 가리키고 있기 때문에 항목을 삽입한 후 front를 감소시킨다.
-- 스택의 push연산과 동일하다.
+- `front`가 하나 앞을 가리키고 있기 때문에 항목을 삽입한 후 `front`를 감소시킨다.
+- **스택의 push연산과 동일**하다.
 
 ```c
 void add_front(DequeType *q, element val)
@@ -117,8 +114,8 @@ void add_front(DequeType *q, element val)
 ## add_rear
 
 - 덱의 뒤에 요소를 추가한다.
-- rear를 증가시킨 후 항목을 삽입한다.
-- 큐의 enqueue 연산과 동일하다.
+- `rear`를 증가시킨 후 항목을 삽입한다.
+- **큐의 enqueue 연산과 동일**하다.
 
 ```c
 void add_rear(DequeType *q, element item)
@@ -133,9 +130,9 @@ void add_rear(DequeType *q, element item)
 ## delete_front
 
 - 덱의 앞에 있는 요소를 반환한 후 삭제한다.
-- front가 하나 앞을 가리키기 때문에 front를 증가시키고 해당 위치의 값을 반환한다.
-- 스택의 pop연산과 동일하다
-- 큐의 dequeue 연산과 동일하다
+- `front`가 하나 앞을 가리키기 때문에 `front`를 증가시키고 해당 위치의 값을 반환한다.
+- **스택의 pop연산과 동일**하다
+- **큐의 dequeue 연산과 동일**하다
 
 ```c
 element delete_front(DequeType * q)
@@ -150,7 +147,7 @@ element delete_front(DequeType * q)
 ## delete_rear
 
 - 덱의 뒤에 있는 요소를 반환한 다음 삭제한다.
-- rear에 해당하는 값을 저장한 후 rear를 감소시키고 이후 저장한 값을 반환한다.
+- `rear`에 해당하는 값을 저장한 후 `rear`를 감소시키고 이후 저장한 값을 반환한다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
 ```c
@@ -165,7 +162,7 @@ element delete_rear(DequeType * q)
 ## get_front
 
 - 덱의 앞에서 삭제하지 않고 앞에 있는 요소를 반환한다.
-- front에서 하나 앞을 가르키는것이 해당하는 값이다.
+- `front`에서 하나 앞을 가르키는것이 해당하는 값이다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
 ```c
@@ -212,7 +209,6 @@ int main(void)
 ```
 
 **코드 실행 결과** 
-
 >DEQUE(front = 4 rear = 0) = 0 |
 >DEQUE(front = 3 rear = 0) = 1 | 0 |
 >DEQUE(front = 2 rear = 0) = 2 | 1 | 0 |
