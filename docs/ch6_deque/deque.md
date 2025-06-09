@@ -1,10 +1,17 @@
-# Deque
+# 덱 (Deque) 
+
+# 1. 덱 이란? 
 
 덱, Deque는 Double Ended Queue의 줄임말이다. 
-
 덱은 데이터값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
 
-![image.png](attachment:08e8a395-58ff-4f04-9379-3549295e7bd7:image.png)
+
+<div align="center">
+ <img src="assets/deque_intro.png" width="600"/>
+ <br>
+ <br>
+ <sub>알고리즘 실행시간 비교 차트</sub>
+ </div>
 
 덱은 큐의 전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다, 
 
@@ -82,7 +89,12 @@ void deque_print(DequeType * q)
 }
 ```
 
-![image.png](attachment:2a73d157-fe26-4776-a728-2ffd9da0e89d:image.png)
+<div align="center">
+ <img src="assets/deque_methods.png" width="600"/>
+ <br>
+ <br>
+ <sub>알고리즘 실행시간 비교 차트</sub>
+ </div>
 
 ## add_front
 
