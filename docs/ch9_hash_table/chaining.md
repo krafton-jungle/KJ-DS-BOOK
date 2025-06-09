@@ -15,7 +15,7 @@
 
 ### **장점:**
 
-- 해시 테이블의 **로드 팩터**(삽입된 요소 수 / 버킷 수)가 1을 초과해도 사용할 수 있다.
+- 해시 테이블의 **적재율**(삽입된 요소 수 / 버킷 수)이 1을 초과해도 사용할 수 있다.
 - 삭제 연산이 다른 충돌 해결 기법에 비해 직관적이고 간단하다.
 - 구현이 비교적 쉽다.
 
@@ -43,7 +43,95 @@
 
 ---
 
-## **2. C를 이용한 체이닝 구현 예시**
+## **2. Python을 이용한 체이닝 구현 예시**
+
+Python에서는 리스트(list)를 사용하여 연결 리스트의 역할을 대신할 수 있다. 각 버킷에 리스트를 할당하고, 충돌이 발생하면 해당 리스트에 `(키, 값)` 튜플을 추가한다.
+
+**Python**
+
+`class HashTable:
+    def __init__(self, size=10):
+        self.size = size
+        self.table = [[] for _ in range(self.size)] # 각 버킷은 리스트 (체이닝)
+
+    def _hash(self, key):
+        """간단한 해시 함수"""
+        return hash(key) % self.size
+
+    def insert(self, key, value):
+        """해시 테이블에 데이터 삽입"""
+        index = self._hash(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                self.table[index][i] = (key, value) # 기존 키가 있으면 값 업데이트
+                return
+        self.table[index].append((key, value)) # 없으면 리스트에 추가
+
+    def search(self, key):
+        """해시 테이블에서 데이터 검색"""
+        index = self._hash(key)
+        for k, v in self.table[index]:
+            if k == key:
+                return v # 값을 찾으면 반환
+        return None # 값을 찾지 못하면 None 반환
+
+    def delete(self, key):
+        """해시 테이블에서 데이터 삭제"""
+        index = self._hash(key)
+        for i, (k, v) in enumerate(self.table[index]):
+            if k == key:
+                del self.table[index][i] # 해당 요소를 리스트에서 삭제
+                print(f"'{key}' 삭제 완료")
+                return
+        print(f"'{key}'를 찾을 수 없다.")
+
+    def display(self):
+        """해시 테이블 내용 출력 (디버깅용)"""
+        for i, bucket in enumerate(self.table):
+            print(f"Bucket {i}: {bucket}")
+
+# 사용 예시
+if __name__ == "__main__":
+    ht = HashTable()
+
+    ht.insert("apple", 10)
+    ht.insert("banana", 20)
+    ht.insert("grape", 30)
+    ht.insert("orange", 40) # apple과 같은 인덱스에 충돌 발생 가능 (해시 함수에 따라)
+    ht.insert("mango", 50)
+    ht.insert("apple", 15) # apple 값 업데이트
+
+    print("--- 해시 테이블 내용 ---")
+    ht.display()
+
+    # 검색 예시
+    print("\n--- 검색 결과 ---")
+    print(f"apple: {ht.search('apple')}")
+    print(f"orange: {ht.search('orange')}")
+    print(f"kiwi: {ht.search('kiwi')}")
+
+    # 삭제 예시
+    print("\n--- 삭제 작업 ---")
+    ht.delete("banana")
+    ht.delete("kiwi")
+
+    print("\n--- 삭제 후 해시 테이블 내용 ---")
+    ht.display()
+
+    print("\n--- 삭제 후 검색 결과 ---")
+    print(f"banana: {ht.search('banana')}")`
+
+**Python 코드 설명:**
+
+- `HashTable` 클래스는 `__init__` 메서드에서 `size`를 받아 해시 테이블의 크기를 설정하고, 각 버킷을 위한 빈 리스트를 `table`에 초기화한다.
+- `_hash` 메서드는 Python의 내장 `hash()` 함수를 사용하고 테이블 크기로 모듈러 연산을 수행하여 인덱스를 생성한다.
+- `insert` 함수는 해시된 인덱스에 해당하는 리스트를 순회하여 키가 이미 존재하는지 확인한다. 존재하면 값을 업데이트하고, 없으면 `(키, 값)` 튜플을 리스트에 추가한다.
+- `search` 함수는 해시된 인덱스의 리스트를 순회하여 키를 찾고 해당 값을 반환한다.
+- `delete` 함수는 해시된 인덱스의 리스트에서 해당 키를 찾아 삭제한다.
+
+---
+
+<!-- ## **2. C를 이용한 체이닝 구현 예시**
 
 C 언어에서 체이닝을 구현하려면 구조체와 포인터를 사용하여 연결 리스트를 직접 만들어야 한다.
 
@@ -234,92 +322,4 @@ int main() {
 - `delete` 함수는 해시된 인덱스의 연결 리스트에서 해당 키를 찾아 삭제한다.
 - `freeHashTable` 함수는 동적으로 할당된 모든 노드의 메모리를 해제하여 메모리 누수를 방지한다.
 
----
-
-## **3. Python을 이용한 체이닝 구현 예시**
-
-Python에서는 리스트(list)를 사용하여 연결 리스트의 역할을 대신할 수 있다. 각 버킷에 리스트를 할당하고, 충돌이 발생하면 해당 리스트에 `(키, 값)` 튜플을 추가한다.
-
-**Python**
-
-`class HashTable:
-    def __init__(self, size=10):
-        self.size = size
-        self.table = [[] for _ in range(self.size)] # 각 버킷은 리스트 (체이닝)
-
-    def _hash(self, key):
-        """간단한 해시 함수"""
-        return hash(key) % self.size
-
-    def insert(self, key, value):
-        """해시 테이블에 데이터 삽입"""
-        index = self._hash(key)
-        for i, (k, v) in enumerate(self.table[index]):
-            if k == key:
-                self.table[index][i] = (key, value) # 기존 키가 있으면 값 업데이트
-                return
-        self.table[index].append((key, value)) # 없으면 리스트에 추가
-
-    def search(self, key):
-        """해시 테이블에서 데이터 검색"""
-        index = self._hash(key)
-        for k, v in self.table[index]:
-            if k == key:
-                return v # 값을 찾으면 반환
-        return None # 값을 찾지 못하면 None 반환
-
-    def delete(self, key):
-        """해시 테이블에서 데이터 삭제"""
-        index = self._hash(key)
-        for i, (k, v) in enumerate(self.table[index]):
-            if k == key:
-                del self.table[index][i] # 해당 요소를 리스트에서 삭제
-                print(f"'{key}' 삭제 완료")
-                return
-        print(f"'{key}'를 찾을 수 없다.")
-
-    def display(self):
-        """해시 테이블 내용 출력 (디버깅용)"""
-        for i, bucket in enumerate(self.table):
-            print(f"Bucket {i}: {bucket}")
-
-# 사용 예시
-if __name__ == "__main__":
-    ht = HashTable()
-
-    ht.insert("apple", 10)
-    ht.insert("banana", 20)
-    ht.insert("grape", 30)
-    ht.insert("orange", 40) # apple과 같은 인덱스에 충돌 발생 가능 (해시 함수에 따라)
-    ht.insert("mango", 50)
-    ht.insert("apple", 15) # apple 값 업데이트
-
-    print("--- 해시 테이블 내용 ---")
-    ht.display()
-
-    # 검색 예시
-    print("\n--- 검색 결과 ---")
-    print(f"apple: {ht.search('apple')}")
-    print(f"orange: {ht.search('orange')}")
-    print(f"kiwi: {ht.search('kiwi')}")
-
-    # 삭제 예시
-    print("\n--- 삭제 작업 ---")
-    ht.delete("banana")
-    ht.delete("kiwi")
-
-    print("\n--- 삭제 후 해시 테이블 내용 ---")
-    ht.display()
-
-    print("\n--- 삭제 후 검색 결과 ---")
-    print(f"banana: {ht.search('banana')}")`
-
-**Python 코드 설명:**
-
-- `HashTable` 클래스는 `__init__` 메서드에서 `size`를 받아 해시 테이블의 크기를 설정하고, 각 버킷을 위한 빈 리스트를 `table`에 초기화한다.
-- `_hash` 메서드는 Python의 내장 `hash()` 함수를 사용하고 테이블 크기로 모듈러 연산을 수행하여 인덱스를 생성한다.
-- `insert` 함수는 해시된 인덱스에 해당하는 리스트를 순회하여 키가 이미 존재하는지 확인한다. 존재하면 값을 업데이트하고, 없으면 `(키, 값)` 튜플을 리스트에 추가한다.
-- `search` 함수는 해시된 인덱스의 리스트를 순회하여 키를 찾고 해당 값을 반환한다.
-- `delete` 함수는 해시된 인덱스의 리스트에서 해당 키를 찾아 삭제한다.
-
----
+--- -->
