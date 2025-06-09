@@ -22,7 +22,7 @@
 
 ## create()
 
-- 덱을 생성한다
+- 덱을 _생성_ 한다.
 
 ```c
 void init_deque(DequeType * q)
@@ -33,7 +33,7 @@ void init_deque(DequeType * q)
 
 ## init_deque
 
-- 덱을 *초기화*한다.
+- 덱을 _초기화_ 한다.
 - `front`와 `rear`을 둘 다 0으로 초기화한다.
 
 ```c
@@ -45,7 +45,7 @@ void init_deque(DequeType * q)
 
 ## is_empty
 
-- 덱이 *비었는지 검사*한다.
+- 덱이 _비었는지 검사_ 한다.
 - `front == rear` 이라면 덱이 비어 있다는 것을 의미한다. 
 
 ```c
@@ -57,7 +57,7 @@ int is_empty(DequeType * q)
 
 ## is_full
 
-- 덱의 *포화 상태를 검사*한다.
+- 덱의 _포화 상태를 검사_ 한다.
 - 앞에서 `front == rear` 일 때를 공백 상태로 보기로 했었기 때문에 한 칸을 비우지 않은 상태로 덱을 꽉 채운다면 `front == rear` 인 상태가 되고 곧, 큐가 공백 상태인지 포화 상태인지를 구별할 수 없다. 배열을 한 칸 비움으로써 공백과 포화 상태를 구분한다.
 
 ```c
@@ -98,7 +98,7 @@ void deque_print(DequeType * q)
 
 ## add_front
 
-- 덱의 *앞에 요소를 추가*한다.
+- 덱의 _앞에 요소를 추가_ 한다.
 - `front`가 하나 앞을 가리키고 있기 때문에 항목을 삽입한 후 `front`를 감소시킨다.
 - **스택의 push연산과 동일**하다.
 
@@ -114,7 +114,7 @@ void add_front(DequeType *q, element val)
 
 ## add_rear
 
-- 덱의 *뒤에 요소를 추가*한다.
+- 덱의 _뒤에 요소를 추가_ 한다.
 - `rear`를 증가시킨 후 항목을 삽입한다.
 - **큐의 enqueue 연산과 동일**하다.
 
@@ -130,7 +130,7 @@ void add_rear(DequeType *q, element item)
 
 ## delete_front
 
-- 덱의 *앞에 있는 요소를 반환한 후 삭제*한다.
+- 덱의 _앞에 있는 요소를 반환한 후 삭제_ 한다.
 - `front`가 하나 앞을 가리키기 때문에 `front`를 증가시키고 해당 위치의 값을 반환한다.
 - **스택의 pop연산과 동일**하다.
 - **큐의 dequeue 연산과 동일**하다.
@@ -147,7 +147,7 @@ element delete_front(DequeType * q)
 
 ## delete_rear
 
-- 덱의 *뒤에 있는 요소를 반환한 다음 삭제*한다.
+- 덱의 _뒤에 있는 요소를 반환한 다음 삭제_ 한다.
 - `rear`에 해당하는 값을 저장한 후 `rear`를 감소시키고 이후 저장한 값을 반환한다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
@@ -162,7 +162,7 @@ element delete_rear(DequeType * q)
 
 ## get_front
 
-- 덱의 *앞에서 삭제하지 않고, 앞에 있는 요소를 반환*한다.
+- 덱의 _앞에서 삭제하지 않고, 앞에 있는 요소를 반환_ 한다.
 - `front`에서 하나 앞을 가르키는것이 해당하는 값이다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
@@ -177,7 +177,7 @@ element get_front(DequeType * q)
 
 ## get_rear
 
-- 덱의 *뒤에서 삭제하지 않고, 뒤에 있는 요소를 반환*한다.
+- 덱의 _뒤에서 삭제하지 않고, 뒤에 있는 요소를 반환_ 한다.
 - 스택이나 큐와는 다른 덱의 추가 연산이다.
 
 ```c
