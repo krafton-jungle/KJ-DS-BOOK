@@ -5,21 +5,22 @@
 덱, Deque는 Double Ended Queue의 줄임말이다. 
 덱은 데이터값을 저장하는 기본적인 구조로, 일차원의 선형 자료구조이다.
 
-
 <div align="center">
- <img src="assets/deque_intro.png" width="600"/>
+ <img src="assets/deque_intro" width="600"/>
  <br>
  <br>
- <sub>알고리즘 실행시간 비교 차트</sub>
+ <sub>덱의 구조</sub>
  </div>
 
 덱은 큐의 전단(front)과 후단(rear)에서 모두 삽입과 삭제를 할 수 있는 큐를 말한다. 하지만 중간에서 삽입하거나 삭제하는 것은 허용하지 않는다, 
 
-단순히 값을 삽입하고 삭제하는 용도로만 활용할 때는 `O(1)`만큼의 시간밖에 할애되지 않기 때문에 아주 효율적이다 . 
+단순히 값을 삽입하고 삭제하는 용도로만 활용할 때는 `O(1)`만큼의 시간밖에 할애되지 않기 때문에 아주 효율적이다. 
 
 덱은 후단만 사용하면 스택이 되고, 후단에서 삽입과 전단에서 삭제 연산을 수행하면 큐가 된다.
 
 덱은 원형 큐 (Circle Queue)를 확장하면 손쉽게 구현할 수 있다. → 원형 큐에서 플러스로 전단(front)에서의 삽입과 후단(rear)에서 삭제만 추가되면 덱을 구현할 수 있기 때문이다. 
+
+# 2. 덱의 연산 및 구현 
 
 ## create()
 
@@ -88,12 +89,13 @@ void deque_print(DequeType * q)
  	printf("\n");
 }
 ```
+* * *
 
 <div align="center">
  <img src="assets/deque_methods.png" width="600"/>
  <br>
  <br>
- <sub>알고리즘 실행시간 비교 차트</sub>
+ <sub>덱(Deque)의 삽입·삭제 동작 시각화</sub>
  </div>
 
 ## add_front
@@ -211,14 +213,9 @@ int main(void)
 
 **코드 실행 결과** 
 
-DEQUE(front = 4 rear = 0) = 0 |
-
-DEQUE(front = 3 rear = 0) = 1 | 0 |
-
-DEQUE(front = 2 rear = 0) = 2 | 1 | 0 |
-
-DEQUE(front = 2 rear = 4) = 2 | 1 |  
-
-DEQUE(front = 2 rear = 3) = 2 | 
-
-DEQUE(front = 2 rear = 2) =
+>DEQUE(front = 4 rear = 0) = 0 |
+>DEQUE(front = 3 rear = 0) = 1 | 0 |
+>DEQUE(front = 2 rear = 0) = 2 | 1 | 0 |
+>DEQUE(front = 2 rear = 4) = 2 | 1 |  
+>DEQUE(front = 2 rear = 3) = 2 | 
+>DEQUE(front = 2 rear = 2) =
