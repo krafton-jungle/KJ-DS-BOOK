@@ -1,9 +1,4 @@
-# 플로이드 와샬 알고리즘
-#### 이 장에서 다룰 내용
-1. 원형 연결 리스트의 개념
-2. 사용 방법
-3. 장단점
-4. 활용 사례
+# 원형 연결 리스트 (Circular Linked List)
 
 ## 원형 연결 리스트란 무엇인가?
 >원형 연결 리스트는 연결 리스트의 모든 노드가 연결되어 있어 사이클을 형성하는 특별한 자료구조다.
@@ -24,7 +19,7 @@ struct Node {
 };
 ```
 <p align="center">
-    <img src="./1.png" width="200px"></img>
+    <img src="./1.png" width="250px" height="150"></img>
 </p>
 
 ### 두 종류의 원형 연결 리스트
@@ -57,7 +52,7 @@ third->next = last
 last->next = first;
 ```
 <p align="center">
-    <img src="./2.png" width="300px" height="100"></img>
+    <img src="./2.png" width="300px" height="150"></img>
 </p>
 
 #### 1-2. 원형 연결 리스트의 헤드 포인터
@@ -71,7 +66,7 @@ last->next = first;
 <u>위의 두 경우 모두 삽입을 위해 전체 리스트를 순회해야 한다.</u>
 
 <p align="center">
-    <img src="./3.png" width="300px" height="100"></img>
+    <img src="./3.png" width="300px" height="150"></img>
 </p>
 
 위의 원형 연결 리스트에서는 헤드 포인터를 `마지막 노드`를 가리키도록 했다. 
@@ -91,7 +86,7 @@ last->next = first;
 <리스트의 끝에 새로운 노드를 삽입하는 경우>
 
 <p align="center">
-    <img src="./5.png" width="300px" height="100"></img>
+    <img src="./5.png" width="300px" height="150"></img>
 </p>
 
 ### 2. 이중 연결 리스트 방식
@@ -120,7 +115,7 @@ struct Node {
 };
 ```
 <p align="center">
-    <img src="./6.png" width="300px" height="100"></img>
+    <img src="./6.png" width="300px" height="150"></img>
 </p>
 
 ## 원형 연결 리스트의 동작
