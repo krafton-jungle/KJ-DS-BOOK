@@ -291,3 +291,7 @@ int main() {
 | 주요 장점 | 전단/후단 O(1) 연산 가능 |
 | 단점 | 포인터 관리 복잡 |
 | 활용 분야 | 브라우저 기록, Undo/Redo, LRU 등 |
+
+---
+## 사진 출처 및 참고 
+- Geeks for Geeks : <a herf="https://www.geeksforgeeks.org/dsa/implementation-deque-using-doubly-linked-list/">Implementation of Deque using doubly linked list</a>
