@@ -89,7 +89,7 @@
 ---
 ## 코드예시
 아래는 Python 언어로 작성한 예시입니다.
-```
+```python
 class Node:
     def __init__(self, data):
         self.data = data
