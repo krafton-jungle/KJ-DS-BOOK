@@ -15,6 +15,6 @@ Python의 내장 딕셔너리 또한 해시테이블로 구현되어 있다.
 | [해시 함수 (Hash Function)]() |  |
 | [해시 테이블 (Hash Table)](/docs/ch9_hash_table/hash_table.md) | 해시맵과 해시테이블의 차이와 해시테이블의 정의설명 |
 | [적재율 (Load Factor)]() |  |
-| [해시 충돌 (Hash Collision)](docs/ch9_hash_table/hash_collision.md) | 해시 함수가 서로 다른 입력값에 대해 동일한 출력값을 내는 현상 |
-| [개방주소법 (Open Addressing)](docs/ch9_hash_table/open_addressing.md) | 빈 버킷을 찾아 해시 충돌을 해결하는 방법 |
+| [해시 충돌 (Hash Collision)](/docs/ch9_hash_table/hash_collision.md) | 해시 함수가 서로 다른 입력값에 대해 동일한 출력값을 내는 현상 |
+| [개방주소법 (Open Addressing)](/docs/ch9_hash_table/open_addressing.md) | 빈 버킷을 찾아 해시 충돌을 해결하는 방법 |
 | [체이닝 (Chaining)](/docs/ch9_hash_table/chaining.md#chaining) | 연결 리스트로 해시 충돌을 해소하는 방법 |
