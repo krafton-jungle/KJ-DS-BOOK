@@ -1,4 +1,4 @@
-# 챕터 1 첫 주제
+# charactor_01
 
 ## charactor
 
